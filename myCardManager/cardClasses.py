@@ -32,11 +32,11 @@ class csvCard(Card):
 
 # add a card from scryfall, need to create csv metadata for it 
 class scryCard(Card):
-    def __init__(self, cardName):
+    def __init__(self, cardName, foil): # cardname should include additional filters for specfic printing! (Implemented in collection class)
         self.cardData = search_card(cardName)
-        self.generateMetaData()
+        self.generateMetaData(foil)
     
-    def generateMetaData(self):
+    def generateMetaData(self, foil=""):
         now = datetime.now()
         # "1","1","NAME","SET_CODE","Near Mint","English","","","TIME","COLLECTOR_NUMBER","False","False",""
         # "Count","Tradelist Count","Name","Edition","Condition","Language","Foil","Tags","Last Modified","Collector Number","Alter","Proxy","Purchase Price"
@@ -46,7 +46,7 @@ class scryCard(Card):
                          "Edition": self.cardData["set"],
                          "Condition": "Near Mint",
                          "Language": "English",
-                         "Foil": "",
+                         "Foil": foil,
                          "Tags": "",
                          "Last Modified": str(now),
                          "Collector Number": self.cardData["collector_number"]
@@ -101,9 +101,13 @@ class Collection:
     def add_card(self, toAdd):
         if (not self.is_card_in_collection(toAdd.cardMeta)):
             self.cards.append(toAdd)
-    
-    def add_card_name(self, name):
-        toAdd = scryCard(name)
+
+    def add_card_name(self, name, foil="", s=None, cn=None): # set id and collector number
+        if (s):
+            name += f" set={set}"
+        if (cn):
+            name += f" cn={cn}"
+        toAdd = scryCard(name, foil)
         if (not self.is_card_in_collection(toAdd.cardMeta)):
             self.cards.append(toAdd)
     
