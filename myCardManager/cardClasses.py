@@ -1,6 +1,7 @@
 from scryfallAPI import search_card
 from datetime import datetime
 import json
+import csv
 
 # needed to make the class serializable
 from json import JSONEncoder
@@ -63,11 +64,31 @@ class Collection:
         with open(target_path, 'w') as file:
             json.dump(self.cards, file)
 
+    def save_to_csv(self, target_path): # save only card meta to a csv so it can be uploaded to moxfield!
+        # generate list of metadata
+        metas = []
+        for i in self.cards:
+            metas.append(i.cardMeta)
+        keys = metas[0].keys()
+
+        with open(target_path, 'w', newline='') as file:
+            dict_writer = csv.DictWriter(file, keys)
+            dict_writer.writeheader()
+            dict_writer.writerows(metas)
+            
+
     def load_from_json(self, path): # use pathlib later!
         with open(path, 'r') as file:
             data = json.load(file)
             for card in data:
                 self.cards.append(Card(card[1], card[0]))
+    
+    def load_from_csv(self, path): # load from metadata and use scryfall!
+        with open(path, mode='r', newline='', encoding='utf-8') as file:
+            reader = csv.DictReader(file)
+
+            for row in reader:
+                self.add_card_meta(row)
                 
 
     def update_collection(self, path): # read collection.csv and compare it to the currently loaded collection and add the cards!
@@ -91,6 +112,7 @@ class Collection:
         if (not self.is_card_in_collection(toAddMeta)):
             self.cards.append(toAdd)
 
+    # there must be an error in here... Its fine for now tho, just need to look into it later
     def is_card_in_collection(self, cardMeta):
         name, setNum, collector, foil = cardMeta["Name"], cardMeta["Edition"], cardMeta["Collector Number"], cardMeta["Foil"]
         
