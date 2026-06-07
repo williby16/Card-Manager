@@ -8,7 +8,7 @@ The file origins used by the API, located at *.scryfall.io do not have these rat
 We encourage you to cache the data you download from Scryfall or process it locally in your own database, at least for 24 hours. Scryfall provides our entire database compressed for download in daily bulk data files.
 """
 
-
+import time
 import requests
 import json
 
@@ -18,10 +18,11 @@ headers = {
 }
 
 def search_card(search_query):
+    time.sleep(0.05) # ensure give time before last query
     results = requests.get(f"https://api.scryfall.com/cards/search?q={search_query}", headers=headers).text
     results = json.loads(results) # make it a dict
     try:
-        print(results) # debug
+        #print(results) # debug
         if results["total_cards"] == 1:
             return results["data"][0]#["name"]
         elif results["total_cards"] > 1:

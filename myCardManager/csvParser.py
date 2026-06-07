@@ -3,15 +3,27 @@ import pandas as pd
 from pathlib import Path
 from scryfallAPI import search_card
 import csv
-import cardClasses
+from cardClasses import *
 
 myCards = []
 
-with open('myCardManager\\binder\\collection.csv', mode='r', newline='', encoding='utf-8') as file:
+# need to implement  windows / mac path solution (pathlib)
+with open('myCardManager/binder/collection.csv', mode='r', newline='', encoding='utf-8') as file:
     reader = csv.DictReader(file)
     
     for row in reader:
         myCards.append(row)
 
-thisCard = cardClasses.baseCard(myCards[0])
-print(thisCard.cardInfo)
+# initial collection build
+if False:
+    myCollection = Collection()
+
+    for i in myCards:
+        print("Adding: ", i["Name"])
+        myCollection.add_card_meta(i)
+
+    myCollection.save_to_json("myCardmanager/binder/scriptCollection.json")
+
+newCollection = Collection()
+newCollection.load_from_json("myCardmanager/binder/scriptCollection.json") # yes this is like instant!
+print(newCollection.cards[0].cardMeta)
