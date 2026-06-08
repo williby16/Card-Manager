@@ -27,8 +27,8 @@ if False:
 
     myCollection.save_to_json(scriptCollectionPath)
 
-newCollection = Collection()
-newCollection.load_from_json(scriptCollectionPath) # yes this is like instant!
+collection = Collection()
+collection.load_from_json(scriptCollectionPath) # yes this is like instant!
 
 
     
