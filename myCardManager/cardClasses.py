@@ -2,6 +2,7 @@ from scryfallAPI import search_card
 from datetime import datetime
 import json
 import csv
+from tqdm import tqdm
 
 # needed to make the class serializable
 from json import JSONEncoder
@@ -86,9 +87,13 @@ class Collection:
     def load_from_csv(self, path): # load from metadata and use scryfall!
         with open(path, mode='r', newline='', encoding='utf-8') as file:
             reader = csv.DictReader(file)
+            rows = list(reader)
+            numRows = len(rows)
 
-            for row in reader:
-                self.add_card_meta(row)
+            #for row in reader:
+            #    self.add_card_meta(row)
+            for row in tqdm(range(numRows)):
+                self.add_card_meta(rows[row])
                 
 
     def update_collection(self, path): # read collection.csv and compare it to the currently loaded collection and add the cards!

@@ -14,14 +14,21 @@ with open('myCardManager/binder/collection.csv', mode='r', newline='', encoding=
     for row in reader:
         myCards.append(row)
 """
+
+collectionPath = Path('myCardManager/binder/collection.csv')
+scriptCollectionPath = Path('myCardmanager/binder/scriptCollection.json')
+
+
 # initial collection build
 if False:
-    load_from_csv('myCardManager/binder/collection.csv')
+    myCollection = Collection()
 
-    myCollection.save_to_json("myCardmanager/binder/scriptCollection.json")
+    myCollection.load_from_csv(collectionPath)
+
+    myCollection.save_to_json(scriptCollectionPath)
 
 newCollection = Collection()
-newCollection.load_from_json("myCardmanager/binder/scriptCollection.json") # yes this is like instant!
+newCollection.load_from_json(scriptCollectionPath) # yes this is like instant!
 
 
     
