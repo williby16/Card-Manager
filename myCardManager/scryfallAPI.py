@@ -15,14 +15,41 @@ from tqdm import tqdm
 import os
 import gzip
 import shutil
+import gc
 
 headers = {
     'User-Agent': 'MyMTGApp/1.2.0',
     'Accept': '*/*'
 }
 
-def search_card(search_query):
-    time.sleep(0.2) # ensure give time before last query
+class ScryBulkUtils:
+    scryBulk = {}
+    isOpen = False
+
+    @staticmethod
+    def openBulk():
+        ScryBulkUtils.isOpen = True
+        with open("myCardmanager/bulk/default-cards.json", "r") as f:
+            ScryBulkUtils.scryBulk = json.load(f)
+    @staticmethod
+    def closeBulk():
+        ScryBulkUtils.isOpen = False
+        ScryBulkUtils.scryBulk = {}
+        gc.collect()
+
+
+def search_card(key):
+    if (not ScryBulkUtils.isOpen):
+        print("Fatal error, unable to open dict!")
+        return "Fatal Error - dict not open?"
+    try:
+        return ScryBulkUtils.scryBulk[key]
+    except:
+        return f"Fatal Error - key: {key} not found in bulk"
+
+
+def query_card(search_query):
+    time.sleep(0.5) # ensure give time before last query
     #results = requests.get(f"https://api.scryfall.com/cards/search?q={search_query}", headers=headers).text # THIS IS TERRIBLE
     # IF we're searching card names, we should strip the name! but thats not up to this to do...
     results = requests.get(
@@ -48,8 +75,8 @@ def search_card(search_query):
         return f"Unable to find card {e}"
 
 def download_bulk():
-    # DELETE OLD FILE
-    # if default-cards.jsonl exists, delete it
+    if os.path.isfile('myCardmanager/bulk/default-cards.jsonl'):
+        os.remove('myCardmanager/bulk/default-cards.jsonl')
 
     metadata = requests.get(
         "https://api.scryfall.com/bulk-data",
@@ -75,7 +102,7 @@ def download_bulk():
 
         total_size = int(r.headers.get("Content-Length", 0))
 
-        with open("bulk/default-cards.jsonl.gz", "wb") as f:
+        with open("myCardmanager/bulk/default-cards.jsonl.gz", "wb") as f:
             with tqdm(
                 total=total_size,
                 unit="B",
@@ -90,16 +117,25 @@ def download_bulk():
 
     # UNZIP THE FILE
     # Define your file paths
-    input_file = 'bulk/default-cards.jsonl.gz'
-    output_file = 'bulk/default-cards.jsonl'
+    input_file = 'myCardmanager/bulk/default-cards.jsonl.gz'
+    output_file = 'myCardmanager/bulk/default-cards.jsonl'
 
     # Open the .gz file in binary read mode ('rb') and the destination in binary write mode ('wb')
     with gzip.open(input_file, 'rb') as f_in:
         with open(output_file, 'wb') as f_out:
             shutil.copyfileobj(f_in, f_out)
+    # delete zipped file once done.
+    os.remove(input_file)
 
-    # PARSE INTO DICT ( MAYBE )
-
+    # create new with updated text!
+    newDict = {}
+    with open("myCardmanager/bulk/default-cards.json", "w", encoding='utf-8') as f_out:
+        with open(output_file, "r", encoding="utf-8") as f_in:
+            for line in tqdm(f_in, desc="Processing"):
+                obj = json.loads(line)
+                newDict.update({f'{obj["set"]}-{obj["collector_number"]}-': obj})
+            json.dump(newDict, f_out)
+    os.remove(output_file)
 
 def remove_formating(txt):
     # remove commas, spaces, hyphens, case etc

@@ -1,8 +1,9 @@
-from scryfallAPI import search_card
+from scryfallAPI import *
 from datetime import datetime
 import json
 import csv
 from tqdm import tqdm
+import gc
 
 # needed to make the class serializable
 from json import JSONEncoder
@@ -28,14 +29,14 @@ class Card:
 # import the card from a csv
 class csvCard(Card):
     def __init__(self, card):
-        thisSearch = f'set={card["Edition"]} cn={card["Collector Number"]}'
+        thisSearch = f'{card["Edition"]}-{card["Collector Number"]}-'
         self.cardMeta = card
         self.cardData = search_card(thisSearch)
 
 # add a card from scryfall, need to create csv metadata for it 
 class scryCard(Card):
     def __init__(self, cardName, foil=""): # cardname should include additional filters for specfic printing! (Implemented in collection class)
-        self.cardData = search_card(cardName)
+        self.cardData = query_card(cardName)
         self.generateMetaData(foil)
     
     def generateMetaData(self, foil=""):
@@ -87,7 +88,8 @@ class Collection:
             #for card in data:
              #   self.cards.append(Card(card[1], card[0]))
     
-    def load_from_csv(self, path): # load from metadata and use scryfall!
+    def load_from_csv(self, path): # load from metadata and use scryfall bulk collection!!
+        ScryBulkUtils.openBulk() # open in close book so we don't have to keep it loaded in memory! idk if its necassary but 
         with open(path, mode='r', newline='', encoding='utf-8') as file:
             reader = csv.DictReader(file)
             rows = list(reader)
@@ -97,13 +99,23 @@ class Collection:
             #    self.add_card_meta(row)
             for row in tqdm(range(numRows)):
                 self.add_card_meta(rows[row])
-                
+        ScryBulkUtils.closeBulk()
 
     def update_collection(self, path): # read collection.csv and compare it to the currently loaded collection and add the cards!
-        pass
+        # there is probably a better way to do this, but this way will utilize functions already written completely.
+        tempPath = "myCardManager/binder/collecton.csv.temp"
+        # redownload latest bulk data
+        download_bulk()
+        # temp save collection to a csv.
+        self.save_to_csv(tempPath)
+        # reload card and scrycard data
+        self.load_from_csv(tempPath)
+        # remove the temp
+        os.remove(tempPath)
+        # NOTE will have to manually save the updated information to the .json file
 
     def refresh_scryfall_data(self): # data like price can change, but this will take a while to run...
-        pass
+        download_bulk()
 
     # when adding a card, check if its already in the collection, then if so, just increase its number!
     def add_card(self, toAdd):
