@@ -16,7 +16,7 @@ with open('myCardManager/binder/collection.csv', mode='r', newline='', encoding=
 """
 
 collectionPath = Path('myCardManager/binder/collection.csv')
-scriptCollectionPath = Path('myCardmanager/binder/scriptCollection.json')
+storedCollectionPath = Path('myCardmanager/binder/scriptCollection.json')
 
 
 # initial collection build
@@ -25,11 +25,9 @@ if False:
 
     myCollection.load_from_csv(collectionPath)
 
-    myCollection.save_to_json(scriptCollectionPath)
+    myCollection.save_to_json(storedCollectionPath)
 
 collection = Collection()
-collection.load_from_json(scriptCollectionPath) # yes this is like instant!
+collection.load_from_json(storedCollectionPath) # yes this is like instant!
 
-
-    
-
+cards = collection.cards

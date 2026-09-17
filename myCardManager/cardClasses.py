@@ -33,7 +33,7 @@ class csvCard(Card):
 
 # add a card from scryfall, need to create csv metadata for it 
 class scryCard(Card):
-    def __init__(self, cardName, foil): # cardname should include additional filters for specfic printing! (Implemented in collection class)
+    def __init__(self, cardName, foil=""): # cardname should include additional filters for specfic printing! (Implemented in collection class)
         self.cardData = search_card(cardName)
         self.generateMetaData(foil)
     
@@ -41,8 +41,8 @@ class scryCard(Card):
         now = datetime.now()
         # "1","1","NAME","SET_CODE","Near Mint","English","","","TIME","COLLECTOR_NUMBER","False","False",""
         # "Count","Tradelist Count","Name","Edition","Condition","Language","Foil","Tags","Last Modified","Collector Number","Alter","Proxy","Purchase Price"
-        self.cardMeta = {"Count": 1,
-                         "Tradelist Count": 1,
+        self.cardMeta = {"Count": "1",
+                         "Tradelist Count": "1",
                          "Name": self.cardData["name"],
                          "Edition": self.cardData["set"],
                          "Condition": "Near Mint",
@@ -57,7 +57,7 @@ class scryCard(Card):
 class Collection:
     def __init__(self, cards=None):
         if (cards == None):
-            self.cards = []
+            self.cards = {}
         else:
             self.cards = cards
     
@@ -104,22 +104,24 @@ class Collection:
 
     # when adding a card, check if its already in the collection, then if so, just increase its number!
     def add_card(self, toAdd):
-        if (not self.is_card_in_collection(toAdd.cardMeta)):
+        existing_card = self.is_card_in_collection(toAdd.cardMeta)
+        if (existing_card):
+            existing_card.cardMeta["Count"] = str(int(existing_card.cardMeta["Count"]) +int(toAdd.cardMeta["Count"]))
+        else:
             self.cards.append(toAdd)
 
+    # I don't remember what this does. It adds a card by name, with set and cn as optional
     def add_card_name(self, name, foil="", s=None, cn=None): # set id and collector number
         if (s):
-            name += f" set={set}"
+            name += f" set={s}"
         if (cn):
             name += f" cn={cn}"
         toAdd = scryCard(name, foil)
-        if (not self.is_card_in_collection(toAdd.cardMeta)):
-            self.cards.append(toAdd)
+        self.add_card(toAdd)
     
     def add_card_meta(self, toAddMeta):
         toAdd = csvCard(toAddMeta)
-        if (not self.is_card_in_collection(toAddMeta)):
-            self.cards.append(toAdd)
+        self.add_card(toAdd)
 
     # there must be an error in here... Its fine for now tho, just need to look into it later
     def is_card_in_collection(self, cardMeta):
@@ -130,8 +132,7 @@ class Collection:
             cName, cSetNum, cCollector, cFoil = thisCard.cardMeta["Name"], thisCard.cardMeta["Edition"], thisCard.cardMeta["Collector Number"], thisCard.cardMeta["Foil"]
             # are they the same? # currently ignoring purchase price and condition bc I dont use those # really should check most of the metadata....
             if (name == cName and setNum == cSetNum and collector == cCollector and foil == cFoil):
-                self.cards[card].cardMeta["Count"] = str(int(thisCard.cardMeta["Count"])+1) # increase our count by 1
-                return True
+                return thisCard
         return False
 
 
