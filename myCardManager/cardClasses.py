@@ -57,7 +57,7 @@ class scryCard(Card):
 class Collection:
     def __init__(self, cards=None):
         if (cards == None):
-            self.cards = {}
+            self.cards = {} # []
         else:
             self.cards = cards
     
@@ -68,7 +68,8 @@ class Collection:
     def save_to_csv(self, target_path): # save only card meta to a csv so it can be uploaded to moxfield!
         # generate list of metadata
         metas = []
-        for i in self.cards:
+        # for i in self.cards:
+        for i in self.cards.values():
             metas.append(i.cardMeta)
         keys = metas[0].keys()
 
@@ -80,9 +81,10 @@ class Collection:
 
     def load_from_json(self, path): # use pathlib later!
         with open(path, 'r') as file:
-            data = json.load(file)
-            for card in data:
-                self.cards.append(Card(card[1], card[0]))
+            self.cards = json.load(file)
+            #data = json.load(file)
+            #for card in data:
+             #   self.cards.append(Card(card[1], card[0]))
     
     def load_from_csv(self, path): # load from metadata and use scryfall!
         with open(path, mode='r', newline='', encoding='utf-8') as file:
@@ -108,7 +110,8 @@ class Collection:
         if (existing_card):
             existing_card.cardMeta["Count"] = str(int(existing_card.cardMeta["Count"]) +int(toAdd.cardMeta["Count"]))
         else:
-            self.cards.append(toAdd)
+            #self.cards.append(toAdd)
+            self.cards.update({f'{toAdd.cardMeta["Edition"]}-{toAdd.cardMeta["Collector Number"]}-{toAdd.cardMeta["Foil"]}': toAdd})
 
     # I don't remember what this does. It adds a card by name, with set and cn as optional
     def add_card_name(self, name, foil="", s=None, cn=None): # set id and collector number
@@ -127,8 +130,9 @@ class Collection:
     def is_card_in_collection(self, cardMeta):
         name, setNum, collector, foil = cardMeta["Name"], cardMeta["Edition"], cardMeta["Collector Number"], cardMeta["Foil"]
         
-        for card in range(len(self.cards)):
-            thisCard = self.cards[card]
+        #for card in range(len(self.cards)):
+            #thisCard = self.cards[card]
+        for thisCard in self.cards.values():
             cName, cSetNum, cCollector, cFoil = thisCard.cardMeta["Name"], thisCard.cardMeta["Edition"], thisCard.cardMeta["Collector Number"], thisCard.cardMeta["Foil"]
             # are they the same? # currently ignoring purchase price and condition bc I dont use those # really should check most of the metadata....
             if (name == cName and setNum == cSetNum and collector == cCollector and foil == cFoil):

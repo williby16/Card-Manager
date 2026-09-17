@@ -20,7 +20,7 @@ storedCollectionPath = Path('myCardmanager/binder/scriptCollection.json')
 
 
 # initial collection build
-if False:
+if True:
     myCollection = Collection()
 
     myCollection.load_from_csv(collectionPath)

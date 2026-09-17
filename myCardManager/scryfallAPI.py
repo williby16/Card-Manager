@@ -19,7 +19,7 @@ headers = {
 
 def search_card(search_query):
     time.sleep(0.05) # ensure give time before last query
-    results = requests.get(f"https://api.scryfall.com/cards/search?q={search_query}", headers=headers).text
+    results = requests.get(f"https://api.scryfall.com/cards/search?q={search_query}", headers=headers).text # THIS IS TERRIBLE
     results = json.loads(results) # make it a dict
     try:
         #print(results) # debug
