@@ -11,6 +11,10 @@ We encourage you to cache the data you download from Scryfall or process it loca
 import time
 import requests
 import json
+from tqdm import tqdm
+import os
+import gzip
+import shutil
 
 headers = {
     'User-Agent': 'MyMTGApp/1.2.0',
@@ -18,8 +22,14 @@ headers = {
 }
 
 def search_card(search_query):
-    time.sleep(0.05) # ensure give time before last query
-    results = requests.get(f"https://api.scryfall.com/cards/search?q={search_query}", headers=headers).text # THIS IS TERRIBLE
+    time.sleep(0.2) # ensure give time before last query
+    #results = requests.get(f"https://api.scryfall.com/cards/search?q={search_query}", headers=headers).text # THIS IS TERRIBLE
+    # IF we're searching card names, we should strip the name! but thats not up to this to do...
+    results = requests.get(
+    "https://api.scryfall.com/cards/search",
+    params={"q": search_query},
+    headers=headers
+).text
     results = json.loads(results) # make it a dict
     try:
         #print(results) # debug
@@ -34,7 +44,62 @@ def search_card(search_query):
         else:
             return "unable to find card"
     except Exception as e:
+        print(results) # debug
         return f"Unable to find card {e}"
+
+def download_bulk():
+    # DELETE OLD FILE
+    # if default-cards.jsonl exists, delete it
+
+    metadata = requests.get(
+        "https://api.scryfall.com/bulk-data",
+        timeout=30,
+        headers=headers
+    ).json()
+
+    default_cards = None
+
+    for i in metadata["data"]:
+        if i["type"] == "default_cards":
+            default_cards=i
+            break
+
+    if default_cards == None:
+        print("error, returning!")
+        return
+
+    download_url = default_cards["jsonl_download_uri"]
+
+    with requests.get(download_url, stream=True, timeout=120) as r:
+        r.raise_for_status()
+
+        total_size = int(r.headers.get("Content-Length", 0))
+
+        with open("bulk/default-cards.jsonl.gz", "wb") as f:
+            with tqdm(
+                total=total_size,
+                unit="B",
+                unit_scale=True,
+                unit_divisor=1024,
+                desc="Downloading",
+            ) as pbar:
+                for chunk in r.iter_content(chunk_size=1024 * 1024):
+                    if chunk:
+                        f.write(chunk)
+                        pbar.update(len(chunk))
+
+    # UNZIP THE FILE
+    # Define your file paths
+    input_file = 'bulk/default-cards.jsonl.gz'
+    output_file = 'bulk/default-cards.jsonl'
+
+    # Open the .gz file in binary read mode ('rb') and the destination in binary write mode ('wb')
+    with gzip.open(input_file, 'rb') as f_in:
+        with open(output_file, 'wb') as f_out:
+            shutil.copyfileobj(f_in, f_out)
+
+    # PARSE INTO DICT ( MAYBE )
+
 
 def remove_formating(txt):
     # remove commas, spaces, hyphens, case etc

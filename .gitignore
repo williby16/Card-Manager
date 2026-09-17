@@ -1,2 +1,3 @@
 # ignores the .csv and .json files storing all of my card information
 myCardManager/binder/
+myCardManager/bulk/

@@ -28,8 +28,9 @@ class Card:
 # import the card from a csv
 class csvCard(Card):
     def __init__(self, card):
+        thisSearch = f'set={card["Edition"]} cn={card["Collector Number"]}'
         self.cardMeta = card
-        self.cardData = search_card(card["Name"])
+        self.cardData = search_card(thisSearch)
 
 # add a card from scryfall, need to create csv metadata for it 
 class scryCard(Card):
@@ -106,12 +107,13 @@ class Collection:
 
     # when adding a card, check if its already in the collection, then if so, just increase its number!
     def add_card(self, toAdd):
-        existing_card = self.is_card_in_collection(toAdd.cardMeta)
-        if (existing_card):
-            existing_card.cardMeta["Count"] = str(int(existing_card.cardMeta["Count"]) +int(toAdd.cardMeta["Count"]))
+        thisKey = f'{toAdd.cardMeta["Edition"]}-{toAdd.cardMeta["Collector Number"]}-{toAdd.cardMeta["Foil"]}'
+        #existing_card = self.is_card_in_collection(toAdd.cardMeta)
+        if (thisKey in self.cards):
+            self.cards[thisKey].cardMeta["Count"] = str(int(self.cards[thisKey].cardMeta["Count"]) + int(toAdd.cardMeta["Count"]))
         else:
             #self.cards.append(toAdd)
-            self.cards.update({f'{toAdd.cardMeta["Edition"]}-{toAdd.cardMeta["Collector Number"]}-{toAdd.cardMeta["Foil"]}': toAdd})
+            self.cards.update({thisKey: toAdd})
 
     # I don't remember what this does. It adds a card by name, with set and cn as optional
     def add_card_name(self, name, foil="", s=None, cn=None): # set id and collector number
@@ -126,6 +128,8 @@ class Collection:
         toAdd = csvCard(toAddMeta)
         self.add_card(toAdd)
 
+    # legacy code
+    """
     # there must be an error in here... Its fine for now tho, just need to look into it later
     def is_card_in_collection(self, cardMeta):
         name, setNum, collector, foil = cardMeta["Name"], cardMeta["Edition"], cardMeta["Collector Number"], cardMeta["Foil"]
@@ -138,6 +142,7 @@ class Collection:
             if (name == cName and setNum == cSetNum and collector == cCollector and foil == cFoil):
                 return thisCard
         return False
+    """
 
 
     
