@@ -140,6 +140,21 @@ class Collection:
         toAdd = csvCard(toAddMeta)
         self.add_card(toAdd)
 
+    # Scryfall functions
+    def search_collection(self, query, retCard=False): # search entire collection with scryfall syntax # retCard for if we return card objects
+        query = query + " unique:prints" # enforce unique prints!
+        targets = query_card(query)
+        if targets["object"] == 'error':
+            return
+        for thisCard in targets["data"]:
+            thisKey = f'{thisCard["set"]}-{thisCard["collector_number"]}-'
+            if (thisKey in self.cards.keys()):
+                print("found card: " + thisKey)
+            thisKey = thisKey + "foil"
+            if (thisKey in self.cards.keys()):
+                print("found card: " + thisKey)
+            
+
     # legacy code
     """
     # there must be an error in here... Its fine for now tho, just need to look into it later

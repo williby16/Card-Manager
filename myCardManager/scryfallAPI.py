@@ -49,6 +49,7 @@ def search_card(key):
 
 
 def query_card(search_query):
+    search_query = remove_formating(search_query) # really weak fix
     time.sleep(0.5) # ensure give time before last query
     #results = requests.get(f"https://api.scryfall.com/cards/search?q={search_query}", headers=headers).text # THIS IS TERRIBLE
     # IF we're searching card names, we should strip the name! but thats not up to this to do...
@@ -58,6 +59,11 @@ def query_card(search_query):
     headers=headers
 ).text
     results = json.loads(results) # make it a dict
+
+    return results
+
+    # legacy code
+    """
     try:
         #print(results) # debug
         if results["total_cards"] == 1:
@@ -73,6 +79,7 @@ def query_card(search_query):
     except Exception as e:
         print(results) # debug
         return f"Unable to find card {e}"
+    """
 
 def download_bulk():
     if os.path.isfile('myCardmanager/bulk/default-cards.jsonl'):
@@ -138,5 +145,5 @@ def download_bulk():
     os.remove(output_file)
 
 def remove_formating(txt):
-    # remove commas, spaces, hyphens, case etc
-    return txt.lower().replace(",", "").replace("-","").replace(" ", "")
+    # remove some commas, spaces, hyphens, case etc
+    return txt.lower().replace(",", "").replace("'", "").strip()

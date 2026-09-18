@@ -1,7 +1,7 @@
 # holy pandas # make this into a class/function
 import pandas as pd
 from pathlib import Path
-from scryfallAPI import search_card
+from scryfallAPI import *
 import csv
 from cardClasses import *
 """
@@ -20,7 +20,7 @@ storedCollectionPath = Path('myCardmanager/binder/scriptCollection.json')
 
 
 # initial collection build
-if True:
+if False:
     myCollection = Collection()
 
     myCollection.load_from_csv(collectionPath)
@@ -30,4 +30,4 @@ if True:
 collection = Collection()
 collection.load_from_json(storedCollectionPath) # yes this is like instant!
 
-cards = collection.cards
+collection.search_collection("set:ecl aquitect")
