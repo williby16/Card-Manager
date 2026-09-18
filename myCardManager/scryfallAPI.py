@@ -18,7 +18,7 @@ import shutil
 import gc
 
 headers = {
-    'User-Agent': 'MyMTGApp/1.2.0',
+    'User-Agent': 'MyMTGApp/0.1 (contact: the.williby@gmail.com)',
     'Accept': '*/*'
 }
 
