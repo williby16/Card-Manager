@@ -30,4 +30,4 @@ if False:
 collection = Collection()
 collection.load_from_json(storedCollectionPath) # yes this is like instant!
 
-collection.search_collection("set:ecl aquitect")
+print(collection.search_collection("set:ecl aquitect"))

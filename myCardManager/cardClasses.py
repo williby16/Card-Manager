@@ -141,18 +141,21 @@ class Collection:
         self.add_card(toAdd)
 
     # Scryfall functions
-    def search_collection(self, query, retCard=False): # search entire collection with scryfall syntax # retCard for if we return card objects
+    def search_collection(self, query): # search entire collection with scryfall syntax # retCard for if we return card objects
         query = query + " unique:prints" # enforce unique prints!
         targets = query_card(query)
         if targets["object"] == 'error':
-            return
+            return [] # search fail, so no cards
+        inCollection = []
         for thisCard in targets["data"]:
             thisKey = f'{thisCard["set"]}-{thisCard["collector_number"]}-'
-            if (thisKey in self.cards.keys()):
-                print("found card: " + thisKey)
+            myKeys = self.cards.keys()
+            if (thisKey in myKeys):
+                inCollection.append(thisKey)
             thisKey = thisKey + "foil"
-            if (thisKey in self.cards.keys()):
-                print("found card: " + thisKey)
+            if (thisKey in myKeys):
+                inCollection.append(thisKey)
+        return inCollection
             
 
     # legacy code
