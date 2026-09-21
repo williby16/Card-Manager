@@ -1,0 +1,2554 @@
+{
+    "count": null,
+    "next": null,
+    "previous": null,
+    "results": {
+        "identity": "GWUB",
+        "included": [
+            {
+                "id": "513-5034--46",
+                "of": [
+                    {
+                        "id": 26516
+                    }
+                ],
+                "uses": [
+                    {
+                        "card": {
+                            "id": 513,
+                            "name": "Hullbreaker Horror",
+                            "faces": 1,
+                            "spoiler": false,
+                            "oracleId": "d4a84e78-d9b9-4c67-8a4b-4329e65f0f15",
+                            "typeLine": "Creature \u2014 Kraken Horror",
+                            "imageUriBackPng": null,
+                            "imageUriFrontPng": "https://cards.scryfall.io/png/front/1/3/137acb70-a1fd-4ea9-a5d9-f4b438eb5e82.png?1783908162",
+                            "imageUriBackLarge": null,
+                            "imageUriBackSmall": null,
+                            "imageUriBackNormal": null,
+                            "imageUriFrontLarge": "https://cards.scryfall.io/large/front/1/3/137acb70-a1fd-4ea9-a5d9-f4b438eb5e82.jpg?1783908162",
+                            "imageUriFrontSmall": "https://cards.scryfall.io/small/front/1/3/137acb70-a1fd-4ea9-a5d9-f4b438eb5e82.jpg?1783908162",
+                            "layoutRotationFront": null,
+                            "imageUriFrontNormal": "https://cards.scryfall.io/normal/front/1/3/137acb70-a1fd-4ea9-a5d9-f4b438eb5e82.jpg?1783908162",
+                            "imageUriBackArtCrop": null,
+                            "imageUriFrontArtCrop": "https://cards.scryfall.io/art_crop/front/1/3/137acb70-a1fd-4ea9-a5d9-f4b438eb5e82.jpg?1783908162"
+                        },
+                        "quantity": 1,
+                        "usedFace": null,
+                        "zoneLocations": [
+                            "B"
+                        ],
+                        "exileCardState": "",
+                        "mustBeCommander": false,
+                        "libraryCardState": "",
+                        "graveyardCardState": "",
+                        "battlefieldCardState": ""
+                    },
+                    {
+                        "card": {
+                            "id": 5034,
+                            "name": "Sol Ring",
+                            "faces": 1,
+                            "spoiler": false,
+                            "oracleId": "6ad8011d-3471-4369-9d68-b264cc027487",
+                            "typeLine": "Artifact",
+                            "imageUriBackPng": null,
+                            "imageUriFrontPng": "https://cards.scryfall.io/png/front/8/e/8ee443cc-e17a-493b-9c93-1f9e141a30e4.png?1789644446",
+                            "imageUriBackLarge": null,
+                            "imageUriBackSmall": null,
+                            "imageUriBackNormal": null,
+                            "imageUriFrontLarge": "https://cards.scryfall.io/large/front/8/e/8ee443cc-e17a-493b-9c93-1f9e141a30e4.jpg?1789644446",
+                            "imageUriFrontSmall": "https://cards.scryfall.io/small/front/8/e/8ee443cc-e17a-493b-9c93-1f9e141a30e4.jpg?1789644446",
+                            "layoutRotationFront": null,
+                            "imageUriFrontNormal": "https://cards.scryfall.io/normal/front/8/e/8ee443cc-e17a-493b-9c93-1f9e141a30e4.jpg?1789644446",
+                            "imageUriBackArtCrop": null,
+                            "imageUriFrontArtCrop": "https://cards.scryfall.io/art_crop/front/8/e/8ee443cc-e17a-493b-9c93-1f9e141a30e4.jpg?1789644446"
+                        },
+                        "quantity": 1,
+                        "usedFace": null,
+                        "zoneLocations": [
+                            "B"
+                        ],
+                        "exileCardState": "",
+                        "mustBeCommander": false,
+                        "libraryCardState": "",
+                        "graveyardCardState": "",
+                        "battlefieldCardState": ""
+                    }
+                ],
+                "notes": "",
+                "prices": {
+                    "tcgplayer": "7.11",
+                    "cardmarket": "4.77",
+                    "cardkingdom": "11.78"
+                },
+                "status": "OK",
+                "spoiler": false,
+                "identity": "U",
+                "includes": [
+                    {
+                        "id": 26516
+                    }
+                ],
+                "produces": [
+                    {
+                        "feature": {
+                            "id": 11,
+                            "name": "Infinite colorless mana",
+                            "status": "S",
+                            "uncountable": true
+                        },
+                        "quantity": 1
+                    },
+                    {
+                        "feature": {
+                            "id": 17,
+                            "name": "Infinite storm count",
+                            "status": "H",
+                            "uncountable": true
+                        },
+                        "quantity": 1
+                    }
+                ],
+                "requires": [
+                    {
+                        "quantity": 1,
+                        "template": {
+                            "id": 46,
+                            "name": "Permanent Castable for {C}",
+                            "scryfallApi": "https://api.scryfall.com/cards/search?q=%28mv%3C%3D1+%28mana%3D%7B0%7D+or+mana%3D%7B1%7D+or+mana%3D%7BC%7D%29+is%3Apermanent%29+legal%3Acommander",
+                            "scryfallQuery": "mv<=1 (mana={0} or mana={1} or mana={C}) is:permanent"
+                        },
+                        "zoneLocations": [
+                            "H"
+                        ],
+                        "exileCardState": "",
+                        "mustBeCommander": false,
+                        "libraryCardState": "",
+                        "graveyardCardState": "",
+                        "battlefieldCardState": ""
+                    }
+                ],
+                "legalities": {
+                    "brawl": false,
+                    "predh": false,
+                    "legacy": false,
+                    "modern": false,
+                    "pauper": false,
+                    "alchemy": false,
+                    "pioneer": false,
+                    "vintage": true,
+                    "standard": false,
+                    "commander": true,
+                    "premodern": false,
+                    "oathbreaker": false,
+                    "standardBrawl": false,
+                    "pauperCommander": false,
+                    "competitiveBrawl": false,
+                    "pauperCommanderMain": false
+                },
+                "popularity": 350348,
+                "bracketTag": "E",
+                "description": "Activate Sol Ring by tapping it, adding {C} {C}.\nCast the permanent that can be cast using {C} by paying its mana cost.\nHullbreaker Horror triggers, returning Sol Ring from the battlefield to your hand.\nCast Sol Ring by paying {1}. \nHullbreaker Horror triggers, returning the permanent cast in step 2 from the battlefield to your hand.\nRepeat.\nIf the permanent can be cast by paying {0}, this combo nets infinite colorless mana.",
+                "manaNeeded": "",
+                "variantCount": 1,
+                "manaValueNeeded": 0,
+                "easyPrerequisites": "",
+                "notablePrerequisites": ""
+            }
+        ],
+        "includedByChangingCommanders": [],
+        "almostIncluded": [
+            {
+                "id": "513-2364--47",
+                "of": [
+                    {
+                        "id": 10718
+                    }
+                ],
+                "uses": [
+                    {
+                        "card": {
+                            "id": 513,
+                            "name": "Hullbreaker Horror",
+                            "faces": 1,
+                            "spoiler": false,
+                            "oracleId": "d4a84e78-d9b9-4c67-8a4b-4329e65f0f15",
+                            "typeLine": "Creature \u2014 Kraken Horror",
+                            "imageUriBackPng": null,
+                            "imageUriFrontPng": "https://cards.scryfall.io/png/front/1/3/137acb70-a1fd-4ea9-a5d9-f4b438eb5e82.png?1783908162",
+                            "imageUriBackLarge": null,
+                            "imageUriBackSmall": null,
+                            "imageUriBackNormal": null,
+                            "imageUriFrontLarge": "https://cards.scryfall.io/large/front/1/3/137acb70-a1fd-4ea9-a5d9-f4b438eb5e82.jpg?1783908162",
+                            "imageUriFrontSmall": "https://cards.scryfall.io/small/front/1/3/137acb70-a1fd-4ea9-a5d9-f4b438eb5e82.jpg?1783908162",
+                            "layoutRotationFront": null,
+                            "imageUriFrontNormal": "https://cards.scryfall.io/normal/front/1/3/137acb70-a1fd-4ea9-a5d9-f4b438eb5e82.jpg?1783908162",
+                            "imageUriBackArtCrop": null,
+                            "imageUriFrontArtCrop": "https://cards.scryfall.io/art_crop/front/1/3/137acb70-a1fd-4ea9-a5d9-f4b438eb5e82.jpg?1783908162"
+                        },
+                        "quantity": 1,
+                        "usedFace": null,
+                        "zoneLocations": [
+                            "B"
+                        ],
+                        "exileCardState": "",
+                        "mustBeCommander": false,
+                        "libraryCardState": "",
+                        "graveyardCardState": "",
+                        "battlefieldCardState": ""
+                    },
+                    {
+                        "card": {
+                            "id": 2364,
+                            "name": "Mana Vault",
+                            "faces": 1,
+                            "spoiler": false,
+                            "oracleId": "736892cb-a34b-4bb9-b56c-e26e3db207a2",
+                            "typeLine": "Artifact",
+                            "imageUriBackPng": null,
+                            "imageUriFrontPng": "https://cards.scryfall.io/png/front/c/1/c1a31d52-a407-4ded-bfca-cc812f11afa0.png?1783921790",
+                            "imageUriBackLarge": null,
+                            "imageUriBackSmall": null,
+                            "imageUriBackNormal": null,
+                            "imageUriFrontLarge": "https://cards.scryfall.io/large/front/c/1/c1a31d52-a407-4ded-bfca-cc812f11afa0.jpg?1783921790",
+                            "imageUriFrontSmall": "https://cards.scryfall.io/small/front/c/1/c1a31d52-a407-4ded-bfca-cc812f11afa0.jpg?1783921790",
+                            "layoutRotationFront": null,
+                            "imageUriFrontNormal": "https://cards.scryfall.io/normal/front/c/1/c1a31d52-a407-4ded-bfca-cc812f11afa0.jpg?1783921790",
+                            "imageUriBackArtCrop": null,
+                            "imageUriFrontArtCrop": "https://cards.scryfall.io/art_crop/front/c/1/c1a31d52-a407-4ded-bfca-cc812f11afa0.jpg?1783921790"
+                        },
+                        "quantity": 1,
+                        "usedFace": null,
+                        "zoneLocations": [
+                            "B"
+                        ],
+                        "exileCardState": "",
+                        "mustBeCommander": false,
+                        "libraryCardState": "",
+                        "graveyardCardState": "",
+                        "battlefieldCardState": ""
+                    }
+                ],
+                "notes": "",
+                "prices": {
+                    "tcgplayer": "93.26",
+                    "cardmarket": "56.21",
+                    "cardkingdom": "118.98"
+                },
+                "status": "OK",
+                "spoiler": false,
+                "identity": "U",
+                "includes": [
+                    {
+                        "id": 10718
+                    }
+                ],
+                "produces": [
+                    {
+                        "feature": {
+                            "id": 11,
+                            "name": "Infinite colorless mana",
+                            "status": "S",
+                            "uncountable": true
+                        },
+                        "quantity": 1
+                    },
+                    {
+                        "feature": {
+                            "id": 17,
+                            "name": "Infinite storm count",
+                            "status": "H",
+                            "uncountable": true
+                        },
+                        "quantity": 1
+                    }
+                ],
+                "requires": [
+                    {
+                        "quantity": 1,
+                        "template": {
+                            "id": 47,
+                            "name": "Permanent Castable for {C}{C}",
+                            "scryfallApi": "https://api.scryfall.com/cards/search?q=%28%28mana%3D0+or+mana%3D%7B1%7D+or+mana%3D%7B2%7D+or+mana%3D%7BC%7D+or+mana%3D%7BC%7D%7BC%7D+or+mana%3D%7B1%7D%7BC%7D+or+mana%3D%7BX%7D+or+mana%3D%7BX%7D%7BX%7D%29+is%3Apermanent%29+legal%3Acommander",
+                            "scryfallQuery": "(mana=0 or mana={1} or mana={2} or mana={C} or mana={C}{C} or mana={1}{C} or mana={X} or mana={X}{X}) is:permanent"
+                        },
+                        "zoneLocations": [
+                            "H"
+                        ],
+                        "exileCardState": "",
+                        "mustBeCommander": false,
+                        "libraryCardState": "",
+                        "graveyardCardState": "",
+                        "battlefieldCardState": ""
+                    }
+                ],
+                "legalities": {
+                    "brawl": false,
+                    "predh": false,
+                    "legacy": false,
+                    "modern": false,
+                    "pauper": false,
+                    "alchemy": false,
+                    "pioneer": false,
+                    "vintage": true,
+                    "standard": false,
+                    "commander": true,
+                    "premodern": false,
+                    "oathbreaker": false,
+                    "standardBrawl": false,
+                    "pauperCommander": false,
+                    "competitiveBrawl": false,
+                    "pauperCommanderMain": false
+                },
+                "popularity": 76678,
+                "bracketTag": "P",
+                "description": "Activate Mana Vault by tapping it, adding {C}{C}{C}.\nCast the permanent that can be cast using {C}{C} from your hand by paying its mana cost.\nHullbreaker Horror triggers, returning Mana Vault from the battlefield to your hand.\nCast Mana Vault by paying {1}.\nHullbreaker Horror triggers, returning the permanent cast in step 2 from the battlefield to your hand.\nRepeat.\nIf the permanent can be cast using {C} or less, this combo nets infinite colorless mana.",
+                "manaNeeded": "",
+                "variantCount": 1,
+                "manaValueNeeded": 0,
+                "easyPrerequisites": "",
+                "notablePrerequisites": ""
+            },
+            {
+                "id": "513-3682",
+                "of": [
+                    {
+                        "id": 33230
+                    }
+                ],
+                "uses": [
+                    {
+                        "card": {
+                            "id": 513,
+                            "name": "Hullbreaker Horror",
+                            "faces": 1,
+                            "spoiler": false,
+                            "oracleId": "d4a84e78-d9b9-4c67-8a4b-4329e65f0f15",
+                            "typeLine": "Creature \u2014 Kraken Horror",
+                            "imageUriBackPng": null,
+                            "imageUriFrontPng": "https://cards.scryfall.io/png/front/1/3/137acb70-a1fd-4ea9-a5d9-f4b438eb5e82.png?1783908162",
+                            "imageUriBackLarge": null,
+                            "imageUriBackSmall": null,
+                            "imageUriBackNormal": null,
+                            "imageUriFrontLarge": "https://cards.scryfall.io/large/front/1/3/137acb70-a1fd-4ea9-a5d9-f4b438eb5e82.jpg?1783908162",
+                            "imageUriFrontSmall": "https://cards.scryfall.io/small/front/1/3/137acb70-a1fd-4ea9-a5d9-f4b438eb5e82.jpg?1783908162",
+                            "layoutRotationFront": null,
+                            "imageUriFrontNormal": "https://cards.scryfall.io/normal/front/1/3/137acb70-a1fd-4ea9-a5d9-f4b438eb5e82.jpg?1783908162",
+                            "imageUriBackArtCrop": null,
+                            "imageUriFrontArtCrop": "https://cards.scryfall.io/art_crop/front/1/3/137acb70-a1fd-4ea9-a5d9-f4b438eb5e82.jpg?1783908162"
+                        },
+                        "quantity": 1,
+                        "usedFace": null,
+                        "zoneLocations": [
+                            "B"
+                        ],
+                        "exileCardState": "",
+                        "mustBeCommander": false,
+                        "libraryCardState": "",
+                        "graveyardCardState": "",
+                        "battlefieldCardState": ""
+                    },
+                    {
+                        "card": {
+                            "id": 3682,
+                            "name": "Mox Amber",
+                            "faces": 1,
+                            "spoiler": false,
+                            "oracleId": "7a43bd27-fdd8-41f0-9bc4-92568f3408f1",
+                            "typeLine": "Legendary Artifact",
+                            "imageUriBackPng": null,
+                            "imageUriFrontPng": "https://cards.scryfall.io/png/front/6/6/66024e69-ad60-4c9a-a0ca-da138d33ad80.png?1783934955",
+                            "imageUriBackLarge": null,
+                            "imageUriBackSmall": null,
+                            "imageUriBackNormal": null,
+                            "imageUriFrontLarge": "https://cards.scryfall.io/large/front/6/6/66024e69-ad60-4c9a-a0ca-da138d33ad80.jpg?1783934955",
+                            "imageUriFrontSmall": "https://cards.scryfall.io/small/front/6/6/66024e69-ad60-4c9a-a0ca-da138d33ad80.jpg?1783934955",
+                            "layoutRotationFront": null,
+                            "imageUriFrontNormal": "https://cards.scryfall.io/normal/front/6/6/66024e69-ad60-4c9a-a0ca-da138d33ad80.jpg?1783934955",
+                            "imageUriBackArtCrop": null,
+                            "imageUriFrontArtCrop": "https://cards.scryfall.io/art_crop/front/6/6/66024e69-ad60-4c9a-a0ca-da138d33ad80.jpg?1783934955"
+                        },
+                        "quantity": 1,
+                        "usedFace": null,
+                        "zoneLocations": [
+                            "B"
+                        ],
+                        "exileCardState": "",
+                        "mustBeCommander": false,
+                        "libraryCardState": "",
+                        "graveyardCardState": "",
+                        "battlefieldCardState": ""
+                    }
+                ],
+                "notes": "If the permanent can be cast by paying {0}, this combo nets infinite colored mana. The permanent must be a creature to get infinite ETB and LTB triggers.",
+                "prices": {
+                    "tcgplayer": "91.91",
+                    "cardmarket": "66.56",
+                    "cardkingdom": "108.98"
+                },
+                "status": "OK",
+                "spoiler": false,
+                "identity": "U",
+                "includes": [
+                    {
+                        "id": 33230
+                    }
+                ],
+                "produces": [
+                    {
+                        "feature": {
+                            "id": 4,
+                            "name": "Infinite creature ETB",
+                            "status": "H",
+                            "uncountable": true
+                        },
+                        "quantity": 1
+                    },
+                    {
+                        "feature": {
+                            "id": 3,
+                            "name": "Infinite creature LTB",
+                            "status": "H",
+                            "uncountable": true
+                        },
+                        "quantity": 1
+                    },
+                    {
+                        "feature": {
+                            "id": 5,
+                            "name": "Infinite colored mana",
+                            "status": "S",
+                            "uncountable": true
+                        },
+                        "quantity": 1
+                    },
+                    {
+                        "feature": {
+                            "id": 17,
+                            "name": "Infinite storm count",
+                            "status": "H",
+                            "uncountable": true
+                        },
+                        "quantity": 1
+                    }
+                ],
+                "requires": [],
+                "legalities": {
+                    "brawl": true,
+                    "predh": false,
+                    "legacy": true,
+                    "modern": true,
+                    "pauper": false,
+                    "alchemy": false,
+                    "pioneer": true,
+                    "vintage": true,
+                    "standard": false,
+                    "commander": true,
+                    "premodern": false,
+                    "oathbreaker": true,
+                    "standardBrawl": false,
+                    "pauperCommander": false,
+                    "competitiveBrawl": true,
+                    "pauperCommanderMain": false
+                },
+                "popularity": 64602,
+                "bracketTag": "S",
+                "description": "Activate Mox Amber by tapping it, adding {1}.\nCast the permanent by paying at most one colored mana.\nHullbreaker Horror triggers, returning Sol Ring from the battlefield to your hand.\nCast Mox Amber by paying {0}\nHullbreaker Horror triggers, returning the permanent cast in step 2 from the battlefield to your hand.\nRepeat.",
+                "manaNeeded": "",
+                "variantCount": 1,
+                "manaValueNeeded": 0,
+                "easyPrerequisites": "",
+                "notablePrerequisites": "You control a legendary creature that has a color that matches the mana symbol in the other permanent's mana cost."
+            },
+            {
+                "id": "542-5034",
+                "of": [
+                    {
+                        "id": 1895
+                    }
+                ],
+                "uses": [
+                    {
+                        "card": {
+                            "id": 542,
+                            "name": "Tidespout Tyrant",
+                            "faces": 1,
+                            "spoiler": false,
+                            "oracleId": "331b44e4-cf08-44f4-8afd-a7374e5dc5ed",
+                            "typeLine": "Creature \u2014 Djinn",
+                            "imageUriBackPng": null,
+                            "imageUriFrontPng": "https://cards.scryfall.io/png/front/d/b/db68f47b-f49a-4978-acdd-453ecfb948da.png?1783913330",
+                            "imageUriBackLarge": null,
+                            "imageUriBackSmall": null,
+                            "imageUriBackNormal": null,
+                            "imageUriFrontLarge": "https://cards.scryfall.io/large/front/d/b/db68f47b-f49a-4978-acdd-453ecfb948da.jpg?1783913330",
+                            "imageUriFrontSmall": "https://cards.scryfall.io/small/front/d/b/db68f47b-f49a-4978-acdd-453ecfb948da.jpg?1783913330",
+                            "layoutRotationFront": null,
+                            "imageUriFrontNormal": "https://cards.scryfall.io/normal/front/d/b/db68f47b-f49a-4978-acdd-453ecfb948da.jpg?1783913330",
+                            "imageUriBackArtCrop": null,
+                            "imageUriFrontArtCrop": "https://cards.scryfall.io/art_crop/front/d/b/db68f47b-f49a-4978-acdd-453ecfb948da.jpg?1783913330"
+                        },
+                        "quantity": 1,
+                        "usedFace": null,
+                        "zoneLocations": [
+                            "B"
+                        ],
+                        "exileCardState": "",
+                        "mustBeCommander": false,
+                        "libraryCardState": "",
+                        "graveyardCardState": "",
+                        "battlefieldCardState": ""
+                    },
+                    {
+                        "card": {
+                            "id": 5034,
+                            "name": "Sol Ring",
+                            "faces": 1,
+                            "spoiler": false,
+                            "oracleId": "6ad8011d-3471-4369-9d68-b264cc027487",
+                            "typeLine": "Artifact",
+                            "imageUriBackPng": null,
+                            "imageUriFrontPng": "https://cards.scryfall.io/png/front/8/e/8ee443cc-e17a-493b-9c93-1f9e141a30e4.png?1789644446",
+                            "imageUriBackLarge": null,
+                            "imageUriBackSmall": null,
+                            "imageUriBackNormal": null,
+                            "imageUriFrontLarge": "https://cards.scryfall.io/large/front/8/e/8ee443cc-e17a-493b-9c93-1f9e141a30e4.jpg?1789644446",
+                            "imageUriFrontSmall": "https://cards.scryfall.io/small/front/8/e/8ee443cc-e17a-493b-9c93-1f9e141a30e4.jpg?1789644446",
+                            "layoutRotationFront": null,
+                            "imageUriFrontNormal": "https://cards.scryfall.io/normal/front/8/e/8ee443cc-e17a-493b-9c93-1f9e141a30e4.jpg?1789644446",
+                            "imageUriBackArtCrop": null,
+                            "imageUriFrontArtCrop": "https://cards.scryfall.io/art_crop/front/8/e/8ee443cc-e17a-493b-9c93-1f9e141a30e4.jpg?1789644446"
+                        },
+                        "quantity": 1,
+                        "usedFace": null,
+                        "zoneLocations": [
+                            "H"
+                        ],
+                        "exileCardState": "",
+                        "mustBeCommander": false,
+                        "libraryCardState": "",
+                        "graveyardCardState": "",
+                        "battlefieldCardState": ""
+                    }
+                ],
+                "notes": "",
+                "prices": {
+                    "tcgplayer": "2.79",
+                    "cardmarket": "2.10",
+                    "cardkingdom": "4.78"
+                },
+                "status": "OK",
+                "spoiler": false,
+                "identity": "U",
+                "includes": [
+                    {
+                        "id": 29370
+                    },
+                    {
+                        "id": 1895
+                    }
+                ],
+                "produces": [
+                    {
+                        "feature": {
+                            "id": 11,
+                            "name": "Infinite colorless mana",
+                            "status": "S",
+                            "uncountable": true
+                        },
+                        "quantity": 1
+                    },
+                    {
+                        "feature": {
+                            "id": 17,
+                            "name": "Infinite storm count",
+                            "status": "H",
+                            "uncountable": true
+                        },
+                        "quantity": 1
+                    }
+                ],
+                "requires": [],
+                "legalities": {
+                    "brawl": false,
+                    "predh": true,
+                    "legacy": false,
+                    "modern": false,
+                    "pauper": false,
+                    "alchemy": false,
+                    "pioneer": false,
+                    "vintage": true,
+                    "standard": false,
+                    "commander": true,
+                    "premodern": false,
+                    "oathbreaker": false,
+                    "standardBrawl": false,
+                    "pauperCommander": false,
+                    "competitiveBrawl": false,
+                    "pauperCommanderMain": false
+                },
+                "popularity": 37020,
+                "bracketTag": "S",
+                "description": "Cast Sol Ring by paying its mana cost.\nTidespout Tyrant triggers, returning a nontoken permanent that can be cast using {C} from the battlefield to your hand.\nActivate Sol Ring by tapping it, adding {C}{C}.\nCast the nontoken permanent returned in step 2 by paying its mana cost.\nTidespout Tyrant triggers, returning Sol Ring from the battlefield to your hand.\nRepeat.",
+                "manaNeeded": "{1}",
+                "variantCount": 6,
+                "manaValueNeeded": 1,
+                "easyPrerequisites": "",
+                "notablePrerequisites": "You control a nontoken permanent that can be cast using {C}."
+            },
+            {
+                "id": "4772-5702--143",
+                "of": [
+                    {
+                        "id": 33228
+                    }
+                ],
+                "uses": [
+                    {
+                        "card": {
+                            "id": 5702,
+                            "name": "Springheart Nantuko",
+                            "faces": 1,
+                            "spoiler": false,
+                            "oracleId": "8a3ad2ef-8bcb-40c0-85de-f03328c2b644",
+                            "typeLine": "Enchantment Creature \u2014 Insect Monk",
+                            "imageUriBackPng": null,
+                            "imageUriFrontPng": "https://cards.scryfall.io/png/front/5/4/54a3ea87-005e-4985-b2a5-21711d0b71c0.png?1783911255",
+                            "imageUriBackLarge": null,
+                            "imageUriBackSmall": null,
+                            "imageUriBackNormal": null,
+                            "imageUriFrontLarge": "https://cards.scryfall.io/large/front/5/4/54a3ea87-005e-4985-b2a5-21711d0b71c0.jpg?1783911255",
+                            "imageUriFrontSmall": "https://cards.scryfall.io/small/front/5/4/54a3ea87-005e-4985-b2a5-21711d0b71c0.jpg?1783911255",
+                            "layoutRotationFront": null,
+                            "imageUriFrontNormal": "https://cards.scryfall.io/normal/front/5/4/54a3ea87-005e-4985-b2a5-21711d0b71c0.jpg?1783911255",
+                            "imageUriBackArtCrop": null,
+                            "imageUriFrontArtCrop": "https://cards.scryfall.io/art_crop/front/5/4/54a3ea87-005e-4985-b2a5-21711d0b71c0.jpg?1783911255"
+                        },
+                        "quantity": 1,
+                        "usedFace": null,
+                        "zoneLocations": [
+                            "H"
+                        ],
+                        "exileCardState": "",
+                        "mustBeCommander": false,
+                        "libraryCardState": "",
+                        "graveyardCardState": "",
+                        "battlefieldCardState": ""
+                    },
+                    {
+                        "card": {
+                            "id": 4772,
+                            "name": "Doubling Season",
+                            "faces": 1,
+                            "spoiler": false,
+                            "oracleId": "01546b7d-a233-4176-8843-d732074dc5b6",
+                            "typeLine": "Enchantment",
+                            "imageUriBackPng": null,
+                            "imageUriFrontPng": "https://cards.scryfall.io/png/front/f/2/f2c4f80e-84a0-463b-82c3-5c6503809351.png?1783909062",
+                            "imageUriBackLarge": null,
+                            "imageUriBackSmall": null,
+                            "imageUriBackNormal": null,
+                            "imageUriFrontLarge": "https://cards.scryfall.io/large/front/f/2/f2c4f80e-84a0-463b-82c3-5c6503809351.jpg?1783909062",
+                            "imageUriFrontSmall": "https://cards.scryfall.io/small/front/f/2/f2c4f80e-84a0-463b-82c3-5c6503809351.jpg?1783909062",
+                            "layoutRotationFront": null,
+                            "imageUriFrontNormal": "https://cards.scryfall.io/normal/front/f/2/f2c4f80e-84a0-463b-82c3-5c6503809351.jpg?1783909062",
+                            "imageUriBackArtCrop": null,
+                            "imageUriFrontArtCrop": "https://cards.scryfall.io/art_crop/front/f/2/f2c4f80e-84a0-463b-82c3-5c6503809351.jpg?1783909062"
+                        },
+                        "quantity": 1,
+                        "usedFace": null,
+                        "zoneLocations": [
+                            "B"
+                        ],
+                        "exileCardState": "",
+                        "mustBeCommander": false,
+                        "libraryCardState": "",
+                        "graveyardCardState": "",
+                        "battlefieldCardState": ""
+                    }
+                ],
+                "notes": "",
+                "prices": {
+                    "tcgplayer": "36.04",
+                    "cardmarket": "24.44",
+                    "cardkingdom": "48.98"
+                },
+                "status": "OK",
+                "spoiler": false,
+                "identity": "G",
+                "includes": [
+                    {
+                        "id": 27481
+                    },
+                    {
+                        "id": 33228
+                    }
+                ],
+                "produces": [
+                    {
+                        "feature": {
+                            "id": 4,
+                            "name": "Infinite creature ETB",
+                            "status": "H",
+                            "uncountable": true
+                        },
+                        "quantity": 1
+                    },
+                    {
+                        "feature": {
+                            "id": 21,
+                            "name": "Infinite creature tokens",
+                            "status": "S",
+                            "uncountable": true
+                        },
+                        "quantity": 1
+                    },
+                    {
+                        "feature": {
+                            "id": 119,
+                            "name": "Infinite landfall triggers",
+                            "status": "H",
+                            "uncountable": true
+                        },
+                        "quantity": 1
+                    },
+                    {
+                        "feature": {
+                            "id": 719,
+                            "name": "Infinite tapped land tokens",
+                            "status": "S",
+                            "uncountable": true
+                        },
+                        "quantity": 1
+                    }
+                ],
+                "requires": [
+                    {
+                        "quantity": 1,
+                        "template": {
+                            "id": 143,
+                            "name": "Card that Earthbends",
+                            "scryfallApi": "https://api.scryfall.com/cards/search?q=%28kw%3Aearthbend%29+legal%3Acommander",
+                            "scryfallQuery": "kw:earthbend"
+                        },
+                        "zoneLocations": [
+                            "H",
+                            "B"
+                        ],
+                        "exileCardState": "",
+                        "mustBeCommander": false,
+                        "libraryCardState": "",
+                        "graveyardCardState": "",
+                        "battlefieldCardState": ""
+                    }
+                ],
+                "legalities": {
+                    "brawl": true,
+                    "predh": false,
+                    "legacy": true,
+                    "modern": true,
+                    "pauper": false,
+                    "alchemy": false,
+                    "pioneer": false,
+                    "vintage": true,
+                    "standard": false,
+                    "commander": true,
+                    "premodern": false,
+                    "oathbreaker": true,
+                    "standardBrawl": false,
+                    "pauperCommander": false,
+                    "competitiveBrawl": true,
+                    "pauperCommanderMain": false
+                },
+                "popularity": 23110,
+                "bracketTag": "E",
+                "description": "Earthbend a land that can tap to produce at least {G}, thus animating it.\nCast Springheart Nantuko for its bestow cost by paying {1}{G}, attaching it to the animated land.\nPlay any land.\nWhen the land enters the battlefield, Springheart Nantuko triggers, causing you to pay {1}{G} to create two token copies of the land it is attached to due to Doubling Season.\nWhen the land tokens enter the battlefield, Springheart Nantuko triggers twice.\nHolding priority, activate the two land tokens by tapping them, adding at least {G}{G}.\nResolve the first Springheart Nantuko trigger, choosing not to pay and create two 1/1 Insect creature tokens due to Doubling Season\nResolve the second trigger, causing you to pay {1}{G} to create two token copies of the land it is attached to due to Doubling Season.\nRepeat from step 5.",
+                "manaNeeded": "{2}{G} plus enough mana to animate the land",
+                "variantCount": 10,
+                "manaValueNeeded": 3,
+                "easyPrerequisites": "You have a land card in hand.\nYou are able to play a land this turn.\nYou control a land that doesn't have summoning sickness and that can tap to produce at least {G}.",
+                "notablePrerequisites": ""
+            },
+            {
+                "id": "513-1636",
+                "of": [
+                    {
+                        "id": 32545
+                    }
+                ],
+                "uses": [
+                    {
+                        "card": {
+                            "id": 513,
+                            "name": "Hullbreaker Horror",
+                            "faces": 1,
+                            "spoiler": false,
+                            "oracleId": "d4a84e78-d9b9-4c67-8a4b-4329e65f0f15",
+                            "typeLine": "Creature \u2014 Kraken Horror",
+                            "imageUriBackPng": null,
+                            "imageUriFrontPng": "https://cards.scryfall.io/png/front/1/3/137acb70-a1fd-4ea9-a5d9-f4b438eb5e82.png?1783908162",
+                            "imageUriBackLarge": null,
+                            "imageUriBackSmall": null,
+                            "imageUriBackNormal": null,
+                            "imageUriFrontLarge": "https://cards.scryfall.io/large/front/1/3/137acb70-a1fd-4ea9-a5d9-f4b438eb5e82.jpg?1783908162",
+                            "imageUriFrontSmall": "https://cards.scryfall.io/small/front/1/3/137acb70-a1fd-4ea9-a5d9-f4b438eb5e82.jpg?1783908162",
+                            "layoutRotationFront": null,
+                            "imageUriFrontNormal": "https://cards.scryfall.io/normal/front/1/3/137acb70-a1fd-4ea9-a5d9-f4b438eb5e82.jpg?1783908162",
+                            "imageUriBackArtCrop": null,
+                            "imageUriFrontArtCrop": "https://cards.scryfall.io/art_crop/front/1/3/137acb70-a1fd-4ea9-a5d9-f4b438eb5e82.jpg?1783908162"
+                        },
+                        "quantity": 1,
+                        "usedFace": null,
+                        "zoneLocations": [
+                            "B"
+                        ],
+                        "exileCardState": "",
+                        "mustBeCommander": false,
+                        "libraryCardState": "",
+                        "graveyardCardState": "",
+                        "battlefieldCardState": ""
+                    },
+                    {
+                        "card": {
+                            "id": 1636,
+                            "name": "Intruder Alarm",
+                            "faces": 1,
+                            "spoiler": false,
+                            "oracleId": "1e943e04-e213-4781-b1a7-935aad8790e1",
+                            "typeLine": "Enchantment",
+                            "imageUriBackPng": null,
+                            "imageUriFrontPng": "https://cards.scryfall.io/png/front/8/d/8d62468e-ed9d-4932-bbbd-103b33b98b25.png?1783944797",
+                            "imageUriBackLarge": null,
+                            "imageUriBackSmall": null,
+                            "imageUriBackNormal": null,
+                            "imageUriFrontLarge": "https://cards.scryfall.io/large/front/8/d/8d62468e-ed9d-4932-bbbd-103b33b98b25.jpg?1783944797",
+                            "imageUriFrontSmall": "https://cards.scryfall.io/small/front/8/d/8d62468e-ed9d-4932-bbbd-103b33b98b25.jpg?1783944797",
+                            "layoutRotationFront": null,
+                            "imageUriFrontNormal": "https://cards.scryfall.io/normal/front/8/d/8d62468e-ed9d-4932-bbbd-103b33b98b25.jpg?1783944797",
+                            "imageUriBackArtCrop": null,
+                            "imageUriFrontArtCrop": "https://cards.scryfall.io/art_crop/front/8/d/8d62468e-ed9d-4932-bbbd-103b33b98b25.jpg?1783944797"
+                        },
+                        "quantity": 1,
+                        "usedFace": null,
+                        "zoneLocations": [
+                            "B"
+                        ],
+                        "exileCardState": "",
+                        "mustBeCommander": false,
+                        "libraryCardState": "",
+                        "graveyardCardState": "",
+                        "battlefieldCardState": ""
+                    }
+                ],
+                "notes": "Ideally, if the two creatures require different amounts of mana, you will want to start the combo with the lower cost creature in your hand. This should negate the need to start with mana. However, the opposite can be done if you provide mana (as needed) to cover the difference. An example of the prerequisite: If the creatures have total cost {3}{U}{U}, other creatures you control, after tapping two times each, must produce at least {3}{U}{U}. Therefore, if creatures you control can tap to produce at least {2}{U}, they will create {4}{U}{U} after being tapped twice, and meet the prerequisite.",
+                "prices": {
+                    "tcgplayer": "9.59",
+                    "cardmarket": "6.11",
+                    "cardkingdom": "13.98"
+                },
+                "status": "OK",
+                "spoiler": false,
+                "identity": "U",
+                "includes": [
+                    {
+                        "id": 27046
+                    },
+                    {
+                        "id": 32545
+                    }
+                ],
+                "produces": [
+                    {
+                        "feature": {
+                            "id": 65,
+                            "name": "Infinite mana creatures you control can produce",
+                            "status": "S",
+                            "uncountable": true
+                        },
+                        "quantity": 1
+                    },
+                    {
+                        "feature": {
+                            "id": 17,
+                            "name": "Infinite storm count",
+                            "status": "H",
+                            "uncountable": true
+                        },
+                        "quantity": 1
+                    },
+                    {
+                        "feature": {
+                            "id": 83,
+                            "name": "Infinite untap of creatures",
+                            "status": "C",
+                            "uncountable": true
+                        },
+                        "quantity": 1
+                    },
+                    {
+                        "feature": {
+                            "id": 4,
+                            "name": "Infinite creature ETB",
+                            "status": "H",
+                            "uncountable": true
+                        },
+                        "quantity": 1
+                    },
+                    {
+                        "feature": {
+                            "id": 3,
+                            "name": "Infinite creature LTB",
+                            "status": "H",
+                            "uncountable": true
+                        },
+                        "quantity": 1
+                    }
+                ],
+                "requires": [],
+                "legalities": {
+                    "brawl": true,
+                    "predh": false,
+                    "legacy": true,
+                    "modern": true,
+                    "pauper": false,
+                    "alchemy": false,
+                    "pioneer": false,
+                    "vintage": true,
+                    "standard": false,
+                    "commander": true,
+                    "premodern": false,
+                    "oathbreaker": true,
+                    "standardBrawl": false,
+                    "pauperCommander": false,
+                    "competitiveBrawl": true,
+                    "pauperCommanderMain": false
+                },
+                "popularity": 12070,
+                "bracketTag": "S",
+                "description": "Activate any number of creatures you control by tapping them, adding an amount of mana.\nCast the creature from your hand by paying its mana cost.\nHullbreaker Horror triggers, returning another creature from the battlefield to your hand.\nResolve the creature spell. When it enters, Intruder Alarm triggers, untapping all creatures.\nRepeat.",
+                "manaNeeded": "",
+                "variantCount": 1,
+                "manaValueNeeded": 0,
+                "easyPrerequisites": "",
+                "notablePrerequisites": "You have a nonland creature card in hand.\nYou control another nontoken nonland reature.\nOther creatures you control can tap to produce enough mana to cast both creatures mentioned above after being tapped twice."
+            },
+            {
+                "id": "1883-4772",
+                "of": [
+                    {
+                        "id": 14231
+                    }
+                ],
+                "uses": [
+                    {
+                        "card": {
+                            "id": 1883,
+                            "name": "Replication Technique",
+                            "faces": 1,
+                            "spoiler": false,
+                            "oracleId": "163baf58-b35d-4f2b-aa53-8384b8b5800a",
+                            "typeLine": "Sorcery",
+                            "imageUriBackPng": null,
+                            "imageUriFrontPng": "https://cards.scryfall.io/png/front/b/3/b3149976-2811-4bbd-af1e-d59016bb0754.png?1783903791",
+                            "imageUriBackLarge": null,
+                            "imageUriBackSmall": null,
+                            "imageUriBackNormal": null,
+                            "imageUriFrontLarge": "https://cards.scryfall.io/large/front/b/3/b3149976-2811-4bbd-af1e-d59016bb0754.jpg?1783903791",
+                            "imageUriFrontSmall": "https://cards.scryfall.io/small/front/b/3/b3149976-2811-4bbd-af1e-d59016bb0754.jpg?1783903791",
+                            "layoutRotationFront": null,
+                            "imageUriFrontNormal": "https://cards.scryfall.io/normal/front/b/3/b3149976-2811-4bbd-af1e-d59016bb0754.jpg?1783903791",
+                            "imageUriBackArtCrop": null,
+                            "imageUriFrontArtCrop": "https://cards.scryfall.io/art_crop/front/b/3/b3149976-2811-4bbd-af1e-d59016bb0754.jpg?1783903791"
+                        },
+                        "quantity": 1,
+                        "usedFace": null,
+                        "zoneLocations": [
+                            "H"
+                        ],
+                        "exileCardState": "",
+                        "mustBeCommander": false,
+                        "libraryCardState": "",
+                        "graveyardCardState": "",
+                        "battlefieldCardState": ""
+                    },
+                    {
+                        "card": {
+                            "id": 4772,
+                            "name": "Doubling Season",
+                            "faces": 1,
+                            "spoiler": false,
+                            "oracleId": "01546b7d-a233-4176-8843-d732074dc5b6",
+                            "typeLine": "Enchantment",
+                            "imageUriBackPng": null,
+                            "imageUriFrontPng": "https://cards.scryfall.io/png/front/f/2/f2c4f80e-84a0-463b-82c3-5c6503809351.png?1783909062",
+                            "imageUriBackLarge": null,
+                            "imageUriBackSmall": null,
+                            "imageUriBackNormal": null,
+                            "imageUriFrontLarge": "https://cards.scryfall.io/large/front/f/2/f2c4f80e-84a0-463b-82c3-5c6503809351.jpg?1783909062",
+                            "imageUriFrontSmall": "https://cards.scryfall.io/small/front/f/2/f2c4f80e-84a0-463b-82c3-5c6503809351.jpg?1783909062",
+                            "layoutRotationFront": null,
+                            "imageUriFrontNormal": "https://cards.scryfall.io/normal/front/f/2/f2c4f80e-84a0-463b-82c3-5c6503809351.jpg?1783909062",
+                            "imageUriBackArtCrop": null,
+                            "imageUriFrontArtCrop": "https://cards.scryfall.io/art_crop/front/f/2/f2c4f80e-84a0-463b-82c3-5c6503809351.jpg?1783909062"
+                        },
+                        "quantity": 1,
+                        "usedFace": null,
+                        "zoneLocations": [
+                            "B"
+                        ],
+                        "exileCardState": "",
+                        "mustBeCommander": false,
+                        "libraryCardState": "",
+                        "graveyardCardState": "",
+                        "battlefieldCardState": ""
+                    }
+                ],
+                "notes": "",
+                "prices": {
+                    "tcgplayer": "30.88",
+                    "cardmarket": "20.08",
+                    "cardkingdom": "40.48"
+                },
+                "status": "OK",
+                "spoiler": false,
+                "identity": "GU",
+                "includes": [
+                    {
+                        "id": 14231
+                    }
+                ],
+                "produces": [
+                    {
+                        "feature": {
+                            "id": 207,
+                            "name": "Near-infinite creature tokens",
+                            "status": "S",
+                            "uncountable": true
+                        },
+                        "quantity": 1
+                    },
+                    {
+                        "feature": {
+                            "id": 60,
+                            "name": "Near-infinite creature ETB",
+                            "status": "H",
+                            "uncountable": true
+                        },
+                        "quantity": 1
+                    }
+                ],
+                "requires": [],
+                "legalities": {
+                    "brawl": false,
+                    "predh": false,
+                    "legacy": true,
+                    "modern": false,
+                    "pauper": false,
+                    "alchemy": false,
+                    "pioneer": false,
+                    "vintage": true,
+                    "standard": false,
+                    "commander": true,
+                    "premodern": false,
+                    "oathbreaker": true,
+                    "standardBrawl": false,
+                    "pauperCommander": false,
+                    "competitiveBrawl": false,
+                    "pauperCommanderMain": false
+                },
+                "popularity": 3652,
+                "bracketTag": "S",
+                "description": "Cast Replication Technique by paying {4}{U}, targeting Doubling Season.\nReplication Technique's demonstrate ability triggers, causing you to copy it, with the copy targeting Doubling Season.\nResolve the copy of Replcation Technique, creating two token copies of Doubling Season.\nResolve the original Replication Technique, creating eight token copies of Doubling Season.\nCreate a creature token, causing you to instead create 2,048 creature tokens.",
+                "manaNeeded": "{4}{U}",
+                "variantCount": 1,
+                "manaValueNeeded": 5,
+                "easyPrerequisites": "",
+                "notablePrerequisites": "You have a way to create a creature token."
+            },
+            {
+                "id": "600-4772",
+                "of": [
+                    {
+                        "id": 9919
+                    }
+                ],
+                "uses": [
+                    {
+                        "card": {
+                            "id": 600,
+                            "name": "Jace, Cunning Castaway",
+                            "faces": 1,
+                            "spoiler": false,
+                            "oracleId": "d2341a16-ffde-42fa-9746-0d8888e812d4",
+                            "typeLine": "Legendary Planeswalker \u2014 Jace",
+                            "imageUriBackPng": null,
+                            "imageUriFrontPng": "https://cards.scryfall.io/png/front/b/7/b75f56f2-88fd-44ba-ad02-56ea3391f173.png?1783935780",
+                            "imageUriBackLarge": null,
+                            "imageUriBackSmall": null,
+                            "imageUriBackNormal": null,
+                            "imageUriFrontLarge": "https://cards.scryfall.io/large/front/b/7/b75f56f2-88fd-44ba-ad02-56ea3391f173.jpg?1783935780",
+                            "imageUriFrontSmall": "https://cards.scryfall.io/small/front/b/7/b75f56f2-88fd-44ba-ad02-56ea3391f173.jpg?1783935780",
+                            "layoutRotationFront": null,
+                            "imageUriFrontNormal": "https://cards.scryfall.io/normal/front/b/7/b75f56f2-88fd-44ba-ad02-56ea3391f173.jpg?1783935780",
+                            "imageUriBackArtCrop": null,
+                            "imageUriFrontArtCrop": "https://cards.scryfall.io/art_crop/front/b/7/b75f56f2-88fd-44ba-ad02-56ea3391f173.jpg?1783935780"
+                        },
+                        "quantity": 1,
+                        "usedFace": null,
+                        "zoneLocations": [
+                            "H"
+                        ],
+                        "exileCardState": "",
+                        "mustBeCommander": false,
+                        "libraryCardState": "",
+                        "graveyardCardState": "",
+                        "battlefieldCardState": ""
+                    },
+                    {
+                        "card": {
+                            "id": 4772,
+                            "name": "Doubling Season",
+                            "faces": 1,
+                            "spoiler": false,
+                            "oracleId": "01546b7d-a233-4176-8843-d732074dc5b6",
+                            "typeLine": "Enchantment",
+                            "imageUriBackPng": null,
+                            "imageUriFrontPng": "https://cards.scryfall.io/png/front/f/2/f2c4f80e-84a0-463b-82c3-5c6503809351.png?1783909062",
+                            "imageUriBackLarge": null,
+                            "imageUriBackSmall": null,
+                            "imageUriBackNormal": null,
+                            "imageUriFrontLarge": "https://cards.scryfall.io/large/front/f/2/f2c4f80e-84a0-463b-82c3-5c6503809351.jpg?1783909062",
+                            "imageUriFrontSmall": "https://cards.scryfall.io/small/front/f/2/f2c4f80e-84a0-463b-82c3-5c6503809351.jpg?1783909062",
+                            "layoutRotationFront": null,
+                            "imageUriFrontNormal": "https://cards.scryfall.io/normal/front/f/2/f2c4f80e-84a0-463b-82c3-5c6503809351.jpg?1783909062",
+                            "imageUriBackArtCrop": null,
+                            "imageUriFrontArtCrop": "https://cards.scryfall.io/art_crop/front/f/2/f2c4f80e-84a0-463b-82c3-5c6503809351.jpg?1783909062"
+                        },
+                        "quantity": 1,
+                        "usedFace": null,
+                        "zoneLocations": [
+                            "B"
+                        ],
+                        "exileCardState": "",
+                        "mustBeCommander": false,
+                        "libraryCardState": "",
+                        "graveyardCardState": "",
+                        "battlefieldCardState": ""
+                    }
+                ],
+                "notes": "Once you have infinite Jace tokens, you may activate their second loyalty abilities by removing two loyalty counters from them, creating infinite 2/2 Illusion creature tokens.",
+                "prices": {
+                    "tcgplayer": "32.08",
+                    "cardmarket": "20.05",
+                    "cardkingdom": "41.78"
+                },
+                "status": "OK",
+                "spoiler": false,
+                "identity": "GU",
+                "includes": [
+                    {
+                        "id": 27481
+                    },
+                    {
+                        "id": 9919
+                    }
+                ],
+                "produces": [
+                    {
+                        "feature": {
+                            "id": 4,
+                            "name": "Infinite creature ETB",
+                            "status": "H",
+                            "uncountable": true
+                        },
+                        "quantity": 1
+                    },
+                    {
+                        "feature": {
+                            "id": 2301,
+                            "name": "Infinite copies of a specific planeswalker",
+                            "status": "S",
+                            "uncountable": true
+                        },
+                        "quantity": 1
+                    },
+                    {
+                        "feature": {
+                            "id": 21,
+                            "name": "Infinite creature tokens",
+                            "status": "S",
+                            "uncountable": true
+                        },
+                        "quantity": 1
+                    }
+                ],
+                "requires": [],
+                "legalities": {
+                    "brawl": true,
+                    "predh": false,
+                    "legacy": true,
+                    "modern": true,
+                    "pauper": false,
+                    "alchemy": false,
+                    "pioneer": true,
+                    "vintage": true,
+                    "standard": false,
+                    "commander": true,
+                    "premodern": false,
+                    "oathbreaker": true,
+                    "standardBrawl": false,
+                    "pauperCommander": false,
+                    "competitiveBrawl": true,
+                    "pauperCommanderMain": false
+                },
+                "popularity": 1175,
+                "bracketTag": "R",
+                "description": "Cast Jace by paying {1}{U}{U}. Jace enters the battlefield with six loyalty counters due to Doubling Season\nActivate Jace's third loyalty ability by removing five loyalty counters from it, creating four nonlegendary copies of Jace that enter the battlefield with six loyalty counters each due to Doubling Season.\nRepeat step 2 using a Jace token.",
+                "manaNeeded": "{1}{U}{U}",
+                "variantCount": 3,
+                "manaValueNeeded": 3,
+                "easyPrerequisites": "",
+                "notablePrerequisites": ""
+            },
+            {
+                "id": "2143-4772",
+                "of": [
+                    {
+                        "id": 1700
+                    }
+                ],
+                "uses": [
+                    {
+                        "card": {
+                            "id": 2143,
+                            "name": "Spawnsire of Ulamog",
+                            "faces": 1,
+                            "spoiler": false,
+                            "oracleId": "b90d2f4d-b4ea-40af-aea0-1ab4234ab80f",
+                            "typeLine": "Creature \u2014 Eldrazi",
+                            "imageUriBackPng": null,
+                            "imageUriFrontPng": "https://cards.scryfall.io/png/front/9/f/9ff46819-bfb3-4448-ab4f-f22ff9e2b2b4.png?1783942012",
+                            "imageUriBackLarge": null,
+                            "imageUriBackSmall": null,
+                            "imageUriBackNormal": null,
+                            "imageUriFrontLarge": "https://cards.scryfall.io/large/front/9/f/9ff46819-bfb3-4448-ab4f-f22ff9e2b2b4.jpg?1783942012",
+                            "imageUriFrontSmall": "https://cards.scryfall.io/small/front/9/f/9ff46819-bfb3-4448-ab4f-f22ff9e2b2b4.jpg?1783942012",
+                            "layoutRotationFront": null,
+                            "imageUriFrontNormal": "https://cards.scryfall.io/normal/front/9/f/9ff46819-bfb3-4448-ab4f-f22ff9e2b2b4.jpg?1783942012",
+                            "imageUriBackArtCrop": null,
+                            "imageUriFrontArtCrop": "https://cards.scryfall.io/art_crop/front/9/f/9ff46819-bfb3-4448-ab4f-f22ff9e2b2b4.jpg?1783942012"
+                        },
+                        "quantity": 1,
+                        "usedFace": null,
+                        "zoneLocations": [
+                            "B"
+                        ],
+                        "exileCardState": "",
+                        "mustBeCommander": false,
+                        "libraryCardState": "",
+                        "graveyardCardState": "",
+                        "battlefieldCardState": ""
+                    },
+                    {
+                        "card": {
+                            "id": 4772,
+                            "name": "Doubling Season",
+                            "faces": 1,
+                            "spoiler": false,
+                            "oracleId": "01546b7d-a233-4176-8843-d732074dc5b6",
+                            "typeLine": "Enchantment",
+                            "imageUriBackPng": null,
+                            "imageUriFrontPng": "https://cards.scryfall.io/png/front/f/2/f2c4f80e-84a0-463b-82c3-5c6503809351.png?1783909062",
+                            "imageUriBackLarge": null,
+                            "imageUriBackSmall": null,
+                            "imageUriBackNormal": null,
+                            "imageUriFrontLarge": "https://cards.scryfall.io/large/front/f/2/f2c4f80e-84a0-463b-82c3-5c6503809351.jpg?1783909062",
+                            "imageUriFrontSmall": "https://cards.scryfall.io/small/front/f/2/f2c4f80e-84a0-463b-82c3-5c6503809351.jpg?1783909062",
+                            "layoutRotationFront": null,
+                            "imageUriFrontNormal": "https://cards.scryfall.io/normal/front/f/2/f2c4f80e-84a0-463b-82c3-5c6503809351.jpg?1783909062",
+                            "imageUriBackArtCrop": null,
+                            "imageUriFrontArtCrop": "https://cards.scryfall.io/art_crop/front/f/2/f2c4f80e-84a0-463b-82c3-5c6503809351.jpg?1783909062"
+                        },
+                        "quantity": 1,
+                        "usedFace": null,
+                        "zoneLocations": [
+                            "B"
+                        ],
+                        "exileCardState": "",
+                        "mustBeCommander": false,
+                        "libraryCardState": "",
+                        "graveyardCardState": "",
+                        "battlefieldCardState": ""
+                    }
+                ],
+                "notes": "",
+                "prices": {
+                    "tcgplayer": "40.46",
+                    "cardmarket": "23.64",
+                    "cardkingdom": "46.98"
+                },
+                "status": "OK",
+                "spoiler": false,
+                "identity": "G",
+                "includes": [
+                    {
+                        "id": 1700
+                    }
+                ],
+                "produces": [
+                    {
+                        "feature": {
+                            "id": 7,
+                            "name": "Infinite death triggers",
+                            "status": "H",
+                            "uncountable": true
+                        },
+                        "quantity": 1
+                    },
+                    {
+                        "feature": {
+                            "id": 4,
+                            "name": "Infinite creature ETB",
+                            "status": "H",
+                            "uncountable": true
+                        },
+                        "quantity": 1
+                    },
+                    {
+                        "feature": {
+                            "id": 3,
+                            "name": "Infinite creature LTB",
+                            "status": "H",
+                            "uncountable": true
+                        },
+                        "quantity": 1
+                    },
+                    {
+                        "feature": {
+                            "id": 6,
+                            "name": "Infinite creature sacrifice triggers",
+                            "status": "H",
+                            "uncountable": true
+                        },
+                        "quantity": 1
+                    }
+                ],
+                "requires": [],
+                "legalities": {
+                    "brawl": false,
+                    "predh": true,
+                    "legacy": true,
+                    "modern": true,
+                    "pauper": false,
+                    "alchemy": false,
+                    "pioneer": false,
+                    "vintage": true,
+                    "standard": false,
+                    "commander": true,
+                    "premodern": false,
+                    "oathbreaker": true,
+                    "standardBrawl": false,
+                    "pauperCommander": false,
+                    "competitiveBrawl": false,
+                    "pauperCommanderMain": false
+                },
+                "popularity": 1061,
+                "bracketTag": "E",
+                "description": "Activate Spawnsire of Ulamog by paying {4}, creating four 0/1 Eldrazi Spawn creature tokens.\nActivate the Eldrazi Spawns by sacrificing them, adding {C}{C}{C}{C}.\nRepeat.",
+                "manaNeeded": "{4}",
+                "variantCount": 11,
+                "manaValueNeeded": 4,
+                "easyPrerequisites": "",
+                "notablePrerequisites": ""
+            },
+            {
+                "id": "513-1306--47",
+                "of": [
+                    {
+                        "id": 7209
+                    }
+                ],
+                "uses": [
+                    {
+                        "card": {
+                            "id": 513,
+                            "name": "Hullbreaker Horror",
+                            "faces": 1,
+                            "spoiler": false,
+                            "oracleId": "d4a84e78-d9b9-4c67-8a4b-4329e65f0f15",
+                            "typeLine": "Creature \u2014 Kraken Horror",
+                            "imageUriBackPng": null,
+                            "imageUriFrontPng": "https://cards.scryfall.io/png/front/1/3/137acb70-a1fd-4ea9-a5d9-f4b438eb5e82.png?1783908162",
+                            "imageUriBackLarge": null,
+                            "imageUriBackSmall": null,
+                            "imageUriBackNormal": null,
+                            "imageUriFrontLarge": "https://cards.scryfall.io/large/front/1/3/137acb70-a1fd-4ea9-a5d9-f4b438eb5e82.jpg?1783908162",
+                            "imageUriFrontSmall": "https://cards.scryfall.io/small/front/1/3/137acb70-a1fd-4ea9-a5d9-f4b438eb5e82.jpg?1783908162",
+                            "layoutRotationFront": null,
+                            "imageUriFrontNormal": "https://cards.scryfall.io/normal/front/1/3/137acb70-a1fd-4ea9-a5d9-f4b438eb5e82.jpg?1783908162",
+                            "imageUriBackArtCrop": null,
+                            "imageUriFrontArtCrop": "https://cards.scryfall.io/art_crop/front/1/3/137acb70-a1fd-4ea9-a5d9-f4b438eb5e82.jpg?1783908162"
+                        },
+                        "quantity": 1,
+                        "usedFace": null,
+                        "zoneLocations": [
+                            "B"
+                        ],
+                        "exileCardState": "",
+                        "mustBeCommander": false,
+                        "libraryCardState": "",
+                        "graveyardCardState": "",
+                        "battlefieldCardState": ""
+                    },
+                    {
+                        "card": {
+                            "id": 1306,
+                            "name": "Mana Crypt",
+                            "faces": 1,
+                            "spoiler": false,
+                            "oracleId": "2c63e4e1-89d2-4bc6-a232-94e75c4b1c8a",
+                            "typeLine": "Artifact",
+                            "imageUriBackPng": null,
+                            "imageUriFrontPng": "https://cards.scryfall.io/png/front/4/d/4d960186-4559-4af0-bd22-63baa15f8939.png?1783930103",
+                            "imageUriBackLarge": null,
+                            "imageUriBackSmall": null,
+                            "imageUriBackNormal": null,
+                            "imageUriFrontLarge": "https://cards.scryfall.io/large/front/4/d/4d960186-4559-4af0-bd22-63baa15f8939.jpg?1783930103",
+                            "imageUriFrontSmall": "https://cards.scryfall.io/small/front/4/d/4d960186-4559-4af0-bd22-63baa15f8939.jpg?1783930103",
+                            "layoutRotationFront": null,
+                            "imageUriFrontNormal": "https://cards.scryfall.io/normal/front/4/d/4d960186-4559-4af0-bd22-63baa15f8939.jpg?1783930103",
+                            "imageUriBackArtCrop": null,
+                            "imageUriFrontArtCrop": "https://cards.scryfall.io/art_crop/front/4/d/4d960186-4559-4af0-bd22-63baa15f8939.jpg?1783930103"
+                        },
+                        "quantity": 1,
+                        "usedFace": null,
+                        "zoneLocations": [
+                            "B"
+                        ],
+                        "exileCardState": "",
+                        "mustBeCommander": false,
+                        "libraryCardState": "",
+                        "graveyardCardState": "",
+                        "battlefieldCardState": ""
+                    }
+                ],
+                "notes": "",
+                "prices": {
+                    "tcgplayer": "45.22",
+                    "cardmarket": "38.94",
+                    "cardkingdom": "46.98"
+                },
+                "status": "OK",
+                "spoiler": false,
+                "identity": "U",
+                "includes": [
+                    {
+                        "id": 7209
+                    }
+                ],
+                "produces": [
+                    {
+                        "feature": {
+                            "id": 11,
+                            "name": "Infinite colorless mana",
+                            "status": "S",
+                            "uncountable": true
+                        },
+                        "quantity": 1
+                    },
+                    {
+                        "feature": {
+                            "id": 17,
+                            "name": "Infinite storm count",
+                            "status": "H",
+                            "uncountable": true
+                        },
+                        "quantity": 1
+                    }
+                ],
+                "requires": [
+                    {
+                        "quantity": 1,
+                        "template": {
+                            "id": 47,
+                            "name": "Permanent Castable for {C}{C}",
+                            "scryfallApi": "https://api.scryfall.com/cards/search?q=%28%28mana%3D0+or+mana%3D%7B1%7D+or+mana%3D%7B2%7D+or+mana%3D%7BC%7D+or+mana%3D%7BC%7D%7BC%7D+or+mana%3D%7B1%7D%7BC%7D+or+mana%3D%7BX%7D+or+mana%3D%7BX%7D%7BX%7D%29+is%3Apermanent%29+legal%3Acommander",
+                            "scryfallQuery": "(mana=0 or mana={1} or mana={2} or mana={C} or mana={C}{C} or mana={1}{C} or mana={X} or mana={X}{X}) is:permanent"
+                        },
+                        "zoneLocations": [
+                            "H"
+                        ],
+                        "exileCardState": "",
+                        "mustBeCommander": false,
+                        "libraryCardState": "",
+                        "graveyardCardState": "",
+                        "battlefieldCardState": ""
+                    }
+                ],
+                "legalities": {
+                    "brawl": false,
+                    "predh": false,
+                    "legacy": false,
+                    "modern": false,
+                    "pauper": false,
+                    "alchemy": false,
+                    "pioneer": false,
+                    "vintage": true,
+                    "standard": false,
+                    "commander": false,
+                    "premodern": false,
+                    "oathbreaker": false,
+                    "standardBrawl": false,
+                    "pauperCommander": false,
+                    "competitiveBrawl": false,
+                    "pauperCommanderMain": false
+                },
+                "popularity": 283,
+                "bracketTag": "B",
+                "description": "Activate Mana Crypt by tapping it, adding {C}{C}.\nCast the permanent that can be cast using {C}{C} from your hand by paying its mana cost.\nHullbreaker Horror triggers, returning Mana Crypt from the battlefield to your hand.\nCast Mana Crypt by paying {0}.\nHullbreaker Horror triggers, returning the permanent cast in step 2 from the battlefield to your hand.\nRepeat.\nIf the permanent can be cast using {C} or less, this combo nets infinite colorless mana.",
+                "manaNeeded": "",
+                "variantCount": 1,
+                "manaValueNeeded": 0,
+                "easyPrerequisites": "",
+                "notablePrerequisites": ""
+            },
+            {
+                "id": "513-5034-5282",
+                "of": [
+                    {
+                        "id": 32228
+                    }
+                ],
+                "uses": [
+                    {
+                        "card": {
+                            "id": 513,
+                            "name": "Hullbreaker Horror",
+                            "faces": 1,
+                            "spoiler": false,
+                            "oracleId": "d4a84e78-d9b9-4c67-8a4b-4329e65f0f15",
+                            "typeLine": "Creature \u2014 Kraken Horror",
+                            "imageUriBackPng": null,
+                            "imageUriFrontPng": "https://cards.scryfall.io/png/front/1/3/137acb70-a1fd-4ea9-a5d9-f4b438eb5e82.png?1783908162",
+                            "imageUriBackLarge": null,
+                            "imageUriBackSmall": null,
+                            "imageUriBackNormal": null,
+                            "imageUriFrontLarge": "https://cards.scryfall.io/large/front/1/3/137acb70-a1fd-4ea9-a5d9-f4b438eb5e82.jpg?1783908162",
+                            "imageUriFrontSmall": "https://cards.scryfall.io/small/front/1/3/137acb70-a1fd-4ea9-a5d9-f4b438eb5e82.jpg?1783908162",
+                            "layoutRotationFront": null,
+                            "imageUriFrontNormal": "https://cards.scryfall.io/normal/front/1/3/137acb70-a1fd-4ea9-a5d9-f4b438eb5e82.jpg?1783908162",
+                            "imageUriBackArtCrop": null,
+                            "imageUriFrontArtCrop": "https://cards.scryfall.io/art_crop/front/1/3/137acb70-a1fd-4ea9-a5d9-f4b438eb5e82.jpg?1783908162"
+                        },
+                        "quantity": 1,
+                        "usedFace": null,
+                        "zoneLocations": [
+                            "B"
+                        ],
+                        "exileCardState": "",
+                        "mustBeCommander": false,
+                        "libraryCardState": "",
+                        "graveyardCardState": "",
+                        "battlefieldCardState": ""
+                    },
+                    {
+                        "card": {
+                            "id": 5034,
+                            "name": "Sol Ring",
+                            "faces": 1,
+                            "spoiler": false,
+                            "oracleId": "6ad8011d-3471-4369-9d68-b264cc027487",
+                            "typeLine": "Artifact",
+                            "imageUriBackPng": null,
+                            "imageUriFrontPng": "https://cards.scryfall.io/png/front/8/e/8ee443cc-e17a-493b-9c93-1f9e141a30e4.png?1789644446",
+                            "imageUriBackLarge": null,
+                            "imageUriBackSmall": null,
+                            "imageUriBackNormal": null,
+                            "imageUriFrontLarge": "https://cards.scryfall.io/large/front/8/e/8ee443cc-e17a-493b-9c93-1f9e141a30e4.jpg?1789644446",
+                            "imageUriFrontSmall": "https://cards.scryfall.io/small/front/8/e/8ee443cc-e17a-493b-9c93-1f9e141a30e4.jpg?1789644446",
+                            "layoutRotationFront": null,
+                            "imageUriFrontNormal": "https://cards.scryfall.io/normal/front/8/e/8ee443cc-e17a-493b-9c93-1f9e141a30e4.jpg?1789644446",
+                            "imageUriBackArtCrop": null,
+                            "imageUriFrontArtCrop": "https://cards.scryfall.io/art_crop/front/8/e/8ee443cc-e17a-493b-9c93-1f9e141a30e4.jpg?1789644446"
+                        },
+                        "quantity": 1,
+                        "usedFace": null,
+                        "zoneLocations": [
+                            "B"
+                        ],
+                        "exileCardState": "",
+                        "mustBeCommander": false,
+                        "libraryCardState": "",
+                        "graveyardCardState": "",
+                        "battlefieldCardState": ""
+                    },
+                    {
+                        "card": {
+                            "id": 5282,
+                            "name": "Wormfang Newt",
+                            "faces": 1,
+                            "spoiler": false,
+                            "oracleId": "be014a79-5550-4f79-8789-b4d6783d7ec8",
+                            "typeLine": "Creature \u2014 Nightmare Salamander Beast",
+                            "imageUriBackPng": null,
+                            "imageUriFrontPng": "https://cards.scryfall.io/png/front/d/f/df8012c1-76ec-4c36-8b38-5bc41ce5e156.png?1783945125",
+                            "imageUriBackLarge": null,
+                            "imageUriBackSmall": null,
+                            "imageUriBackNormal": null,
+                            "imageUriFrontLarge": "https://cards.scryfall.io/large/front/d/f/df8012c1-76ec-4c36-8b38-5bc41ce5e156.jpg?1783945125",
+                            "imageUriFrontSmall": "https://cards.scryfall.io/small/front/d/f/df8012c1-76ec-4c36-8b38-5bc41ce5e156.jpg?1783945125",
+                            "layoutRotationFront": null,
+                            "imageUriFrontNormal": "https://cards.scryfall.io/normal/front/d/f/df8012c1-76ec-4c36-8b38-5bc41ce5e156.jpg?1783945125",
+                            "imageUriBackArtCrop": null,
+                            "imageUriFrontArtCrop": "https://cards.scryfall.io/art_crop/front/d/f/df8012c1-76ec-4c36-8b38-5bc41ce5e156.jpg?1783945125"
+                        },
+                        "quantity": 1,
+                        "usedFace": null,
+                        "zoneLocations": [
+                            "H"
+                        ],
+                        "exileCardState": "",
+                        "mustBeCommander": false,
+                        "libraryCardState": "",
+                        "graveyardCardState": "",
+                        "battlefieldCardState": ""
+                    }
+                ],
+                "notes": "",
+                "prices": {
+                    "tcgplayer": "7.30",
+                    "cardmarket": "4.89",
+                    "cardkingdom": "12.13"
+                },
+                "status": "OK",
+                "spoiler": false,
+                "identity": "U",
+                "includes": [
+                    {
+                        "id": 32228
+                    }
+                ],
+                "produces": [
+                    {
+                        "feature": {
+                            "id": 2408,
+                            "name": "Infinite artifact ETB",
+                            "status": "H",
+                            "uncountable": true
+                        },
+                        "quantity": 1
+                    },
+                    {
+                        "feature": {
+                            "id": 2409,
+                            "name": "Infinite artifact LTB",
+                            "status": "H",
+                            "uncountable": true
+                        },
+                        "quantity": 1
+                    },
+                    {
+                        "feature": {
+                            "id": 4,
+                            "name": "Infinite creature ETB",
+                            "status": "H",
+                            "uncountable": true
+                        },
+                        "quantity": 1
+                    },
+                    {
+                        "feature": {
+                            "id": 3,
+                            "name": "Infinite creature LTB",
+                            "status": "H",
+                            "uncountable": true
+                        },
+                        "quantity": 1
+                    },
+                    {
+                        "feature": {
+                            "id": 119,
+                            "name": "Infinite landfall triggers",
+                            "status": "H",
+                            "uncountable": true
+                        },
+                        "quantity": 1
+                    },
+                    {
+                        "feature": {
+                            "id": 17,
+                            "name": "Infinite storm count",
+                            "status": "H",
+                            "uncountable": true
+                        },
+                        "quantity": 1
+                    }
+                ],
+                "requires": [],
+                "legalities": {
+                    "brawl": false,
+                    "predh": false,
+                    "legacy": false,
+                    "modern": false,
+                    "pauper": false,
+                    "alchemy": false,
+                    "pioneer": false,
+                    "vintage": true,
+                    "standard": false,
+                    "commander": true,
+                    "premodern": false,
+                    "oathbreaker": false,
+                    "standardBrawl": false,
+                    "pauperCommander": false,
+                    "competitiveBrawl": false,
+                    "pauperCommanderMain": false
+                },
+                "popularity": 221,
+                "bracketTag": "E",
+                "description": "Activate Sol Ring and a land by tapping them, adding at least {C}{C}{U}.\nCast Wormfang Newt by paying {1}{U}.\nHullbreaker Horror triggers, returning Sol Ring from the battlefield to your hand.\nWhen Wormfang Newt enters, its first ability triggers, exiling the land tapped in step 1\nCast Sol Ring by paying {1}.\nHullbreaker Horror triggers, returning Wormfang Newt from the battlefield to your hand.\nWormfang Newt's second ability triggers, returning the Iand from exile to the battlefield.\nRepeat.",
+                "manaNeeded": "",
+                "variantCount": 1,
+                "manaValueNeeded": 0,
+                "easyPrerequisites": "You control a land that enters untapped and that can be tapped to produce at least {U}.",
+                "notablePrerequisites": ""
+            },
+            {
+                "id": "513--77",
+                "of": [
+                    {
+                        "id": 28201
+                    }
+                ],
+                "uses": [
+                    {
+                        "card": {
+                            "id": 513,
+                            "name": "Hullbreaker Horror",
+                            "faces": 1,
+                            "spoiler": false,
+                            "oracleId": "d4a84e78-d9b9-4c67-8a4b-4329e65f0f15",
+                            "typeLine": "Creature \u2014 Kraken Horror",
+                            "imageUriBackPng": null,
+                            "imageUriFrontPng": "https://cards.scryfall.io/png/front/1/3/137acb70-a1fd-4ea9-a5d9-f4b438eb5e82.png?1783908162",
+                            "imageUriBackLarge": null,
+                            "imageUriBackSmall": null,
+                            "imageUriBackNormal": null,
+                            "imageUriFrontLarge": "https://cards.scryfall.io/large/front/1/3/137acb70-a1fd-4ea9-a5d9-f4b438eb5e82.jpg?1783908162",
+                            "imageUriFrontSmall": "https://cards.scryfall.io/small/front/1/3/137acb70-a1fd-4ea9-a5d9-f4b438eb5e82.jpg?1783908162",
+                            "layoutRotationFront": null,
+                            "imageUriFrontNormal": "https://cards.scryfall.io/normal/front/1/3/137acb70-a1fd-4ea9-a5d9-f4b438eb5e82.jpg?1783908162",
+                            "imageUriBackArtCrop": null,
+                            "imageUriFrontArtCrop": "https://cards.scryfall.io/art_crop/front/1/3/137acb70-a1fd-4ea9-a5d9-f4b438eb5e82.jpg?1783908162"
+                        },
+                        "quantity": 1,
+                        "usedFace": null,
+                        "zoneLocations": [
+                            "B"
+                        ],
+                        "exileCardState": "",
+                        "mustBeCommander": false,
+                        "libraryCardState": "",
+                        "graveyardCardState": "",
+                        "battlefieldCardState": ""
+                    }
+                ],
+                "notes": "",
+                "prices": {
+                    "tcgplayer": "5.72",
+                    "cardmarket": "3.94",
+                    "cardkingdom": "8.99"
+                },
+                "status": "OK",
+                "spoiler": false,
+                "identity": "U",
+                "includes": [
+                    {
+                        "id": 28201
+                    }
+                ],
+                "produces": [
+                    {
+                        "feature": {
+                            "id": 3,
+                            "name": "Infinite creature LTB",
+                            "status": "H",
+                            "uncountable": true
+                        },
+                        "quantity": 1
+                    },
+                    {
+                        "feature": {
+                            "id": 4,
+                            "name": "Infinite creature ETB",
+                            "status": "H",
+                            "uncountable": true
+                        },
+                        "quantity": 1
+                    },
+                    {
+                        "feature": {
+                            "id": 17,
+                            "name": "Infinite storm count",
+                            "status": "H",
+                            "uncountable": true
+                        },
+                        "quantity": 1
+                    }
+                ],
+                "requires": [
+                    {
+                        "quantity": 2,
+                        "template": {
+                            "id": 77,
+                            "name": "Permanent with Affinity and a Generic Mana Cost",
+                            "scryfallApi": "https://api.scryfall.com/cards/search?q=%28keyword%3Aaffinity+-mana%3A%7BW%7D+-mana%3A%7BU%7D+-mana%3A%7BB%7D+-mana%3A%7BR%7D+-mana%3A%7BG%7D%29+legal%3Acommander",
+                            "scryfallQuery": "keyword:affinity -mana:{W} -mana:{U} -mana:{B} -mana:{R} -mana:{G}"
+                        },
+                        "zoneLocations": [
+                            "H",
+                            "B"
+                        ],
+                        "exileCardState": "",
+                        "mustBeCommander": false,
+                        "libraryCardState": "",
+                        "graveyardCardState": "",
+                        "battlefieldCardState": ""
+                    }
+                ],
+                "legalities": {
+                    "brawl": true,
+                    "predh": false,
+                    "legacy": true,
+                    "modern": true,
+                    "pauper": false,
+                    "alchemy": false,
+                    "pioneer": true,
+                    "vintage": true,
+                    "standard": false,
+                    "commander": true,
+                    "premodern": false,
+                    "oathbreaker": true,
+                    "standardBrawl": false,
+                    "pauperCommander": false,
+                    "competitiveBrawl": true,
+                    "pauperCommanderMain": false
+                },
+                "popularity": 0,
+                "bracketTag": "E",
+                "description": "Cast the card with affinity in your hand by paying {0}.\nHullbreaker Horror triggers, returning the other affinity card from the battlefield to your hand.\nResolve the spell cast in step 1.\nRepeat.",
+                "manaNeeded": "",
+                "variantCount": 1,
+                "manaValueNeeded": 0,
+                "easyPrerequisites": "",
+                "notablePrerequisites": "You can cast both affinity cards for {0}.\nOne of the affinity cards must be in your hand, with the other on the battlefield."
+            },
+            {
+                "id": "513--62",
+                "of": [
+                    {
+                        "id": 28161
+                    }
+                ],
+                "uses": [
+                    {
+                        "card": {
+                            "id": 513,
+                            "name": "Hullbreaker Horror",
+                            "faces": 1,
+                            "spoiler": false,
+                            "oracleId": "d4a84e78-d9b9-4c67-8a4b-4329e65f0f15",
+                            "typeLine": "Creature \u2014 Kraken Horror",
+                            "imageUriBackPng": null,
+                            "imageUriFrontPng": "https://cards.scryfall.io/png/front/1/3/137acb70-a1fd-4ea9-a5d9-f4b438eb5e82.png?1783908162",
+                            "imageUriBackLarge": null,
+                            "imageUriBackSmall": null,
+                            "imageUriBackNormal": null,
+                            "imageUriFrontLarge": "https://cards.scryfall.io/large/front/1/3/137acb70-a1fd-4ea9-a5d9-f4b438eb5e82.jpg?1783908162",
+                            "imageUriFrontSmall": "https://cards.scryfall.io/small/front/1/3/137acb70-a1fd-4ea9-a5d9-f4b438eb5e82.jpg?1783908162",
+                            "layoutRotationFront": null,
+                            "imageUriFrontNormal": "https://cards.scryfall.io/normal/front/1/3/137acb70-a1fd-4ea9-a5d9-f4b438eb5e82.jpg?1783908162",
+                            "imageUriBackArtCrop": null,
+                            "imageUriFrontArtCrop": "https://cards.scryfall.io/art_crop/front/1/3/137acb70-a1fd-4ea9-a5d9-f4b438eb5e82.jpg?1783908162"
+                        },
+                        "quantity": 1,
+                        "usedFace": null,
+                        "zoneLocations": [
+                            "B"
+                        ],
+                        "exileCardState": "",
+                        "mustBeCommander": false,
+                        "libraryCardState": "",
+                        "graveyardCardState": "",
+                        "battlefieldCardState": ""
+                    }
+                ],
+                "notes": "The Infinite ETB and Infinite LTB results are only for variants with at least one creature.\r\n\r\nChalice of the Void is included in this template search but will not work in this combo.",
+                "prices": {
+                    "tcgplayer": "5.72",
+                    "cardmarket": "3.94",
+                    "cardkingdom": "8.99"
+                },
+                "status": "OK",
+                "spoiler": false,
+                "identity": "U",
+                "includes": [
+                    {
+                        "id": 28161
+                    }
+                ],
+                "produces": [
+                    {
+                        "feature": {
+                            "id": 3,
+                            "name": "Infinite creature LTB",
+                            "status": "H",
+                            "uncountable": true
+                        },
+                        "quantity": 1
+                    },
+                    {
+                        "feature": {
+                            "id": 4,
+                            "name": "Infinite creature ETB",
+                            "status": "H",
+                            "uncountable": true
+                        },
+                        "quantity": 1
+                    },
+                    {
+                        "feature": {
+                            "id": 17,
+                            "name": "Infinite storm count",
+                            "status": "H",
+                            "uncountable": true
+                        },
+                        "quantity": 1
+                    }
+                ],
+                "requires": [
+                    {
+                        "quantity": 2,
+                        "template": {
+                            "id": 62,
+                            "name": "Permanent castable for {0} that survives",
+                            "scryfallApi": "https://api.scryfall.com/cards/search?q=%28%28-t%3Acreature+or+toughness%21%3D0%29+mv%3D0+-m%3C%7B0%7D+-t%3Ainstant+-t%3Asorcery%29+legal%3Acommander",
+                            "scryfallQuery": "(-t:creature or toughness!=0) mv=0 -m<{0} -t:instant -t:sorcery"
+                        },
+                        "zoneLocations": [
+                            "H"
+                        ],
+                        "exileCardState": "",
+                        "mustBeCommander": false,
+                        "libraryCardState": "",
+                        "graveyardCardState": "",
+                        "battlefieldCardState": ""
+                    }
+                ],
+                "legalities": {
+                    "brawl": true,
+                    "predh": false,
+                    "legacy": true,
+                    "modern": true,
+                    "pauper": false,
+                    "alchemy": false,
+                    "pioneer": true,
+                    "vintage": true,
+                    "standard": false,
+                    "commander": true,
+                    "premodern": false,
+                    "oathbreaker": true,
+                    "standardBrawl": false,
+                    "pauperCommander": false,
+                    "competitiveBrawl": true,
+                    "pauperCommanderMain": false
+                },
+                "popularity": 0,
+                "bracketTag": "E",
+                "description": "Cast one of the permanents from your hand by paying {0}.\nHullbreaker Horror triggers; choose to return nothing.\nThat permanent enters the battlefield.\nCast one of the permanents from your hand by paying {0}.\nHullbreaker Horror triggers, returning the other permanent from the battlefield to your hand.\nThe permanent you cast enters the battlefield.\nRepeat from step 4.",
+                "manaNeeded": "",
+                "variantCount": 1,
+                "manaValueNeeded": 0,
+                "easyPrerequisites": "",
+                "notablePrerequisites": ""
+            },
+            {
+                "id": "3388--5--80",
+                "of": [
+                    {
+                        "id": 32385
+                    }
+                ],
+                "uses": [
+                    {
+                        "card": {
+                            "id": 3388,
+                            "name": "Moritte of the Frost",
+                            "faces": 1,
+                            "spoiler": false,
+                            "oracleId": "78699161-fc14-4a44-8a15-0f7c08be0343",
+                            "typeLine": "Legendary Snow Creature \u2014 Shapeshifter",
+                            "imageUriBackPng": null,
+                            "imageUriFrontPng": "https://cards.scryfall.io/png/front/2/2/22fdbe71-abca-4e48-99b2-1cb6b35d930b.png?1783928193",
+                            "imageUriBackLarge": null,
+                            "imageUriBackSmall": null,
+                            "imageUriBackNormal": null,
+                            "imageUriFrontLarge": "https://cards.scryfall.io/large/front/2/2/22fdbe71-abca-4e48-99b2-1cb6b35d930b.jpg?1783928193",
+                            "imageUriFrontSmall": "https://cards.scryfall.io/small/front/2/2/22fdbe71-abca-4e48-99b2-1cb6b35d930b.jpg?1783928193",
+                            "layoutRotationFront": null,
+                            "imageUriFrontNormal": "https://cards.scryfall.io/normal/front/2/2/22fdbe71-abca-4e48-99b2-1cb6b35d930b.jpg?1783928193",
+                            "imageUriBackArtCrop": null,
+                            "imageUriFrontArtCrop": "https://cards.scryfall.io/art_crop/front/2/2/22fdbe71-abca-4e48-99b2-1cb6b35d930b.jpg?1783928193"
+                        },
+                        "quantity": 1,
+                        "usedFace": null,
+                        "zoneLocations": [
+                            "H",
+                            "C"
+                        ],
+                        "exileCardState": "",
+                        "mustBeCommander": false,
+                        "libraryCardState": "",
+                        "graveyardCardState": "",
+                        "battlefieldCardState": ""
+                    }
+                ],
+                "notes": "Moritte can only be your commander if the sources from both templates fit within its commander identity.",
+                "prices": {
+                    "tcgplayer": "0.23",
+                    "cardmarket": "0.16",
+                    "cardkingdom": "0.35"
+                },
+                "status": "OK",
+                "spoiler": false,
+                "identity": "GU",
+                "includes": [
+                    {
+                        "id": 32385
+                    }
+                ],
+                "produces": [
+                    {
+                        "feature": {
+                            "id": 4,
+                            "name": "Infinite creature ETB",
+                            "status": "H",
+                            "uncountable": true
+                        },
+                        "quantity": 1
+                    },
+                    {
+                        "feature": {
+                            "id": 3,
+                            "name": "Infinite creature LTB",
+                            "status": "H",
+                            "uncountable": true
+                        },
+                        "quantity": 1
+                    },
+                    {
+                        "feature": {
+                            "id": 7,
+                            "name": "Infinite death triggers",
+                            "status": "H",
+                            "uncountable": true
+                        },
+                        "quantity": 1
+                    }
+                ],
+                "requires": [
+                    {
+                        "quantity": 1,
+                        "template": {
+                            "id": 80,
+                            "name": "Card with \"The Ring tempts you\"",
+                            "scryfallApi": "https://api.scryfall.com/cards/search?q=%28o%3A%22the+Ring+tempts+you%22%29+legal%3Acommander",
+                            "scryfallQuery": "o:\"the Ring tempts you\""
+                        },
+                        "zoneLocations": [
+                            "H",
+                            "B"
+                        ],
+                        "exileCardState": "",
+                        "mustBeCommander": false,
+                        "libraryCardState": "",
+                        "graveyardCardState": "",
+                        "battlefieldCardState": ""
+                    },
+                    {
+                        "quantity": 1,
+                        "template": {
+                            "id": 5,
+                            "name": "Persist Creature",
+                            "scryfallApi": "https://api.scryfall.com/cards/search?q=%28keyword%3Apersist+t%3Acreature%29+legal%3Acommander",
+                            "scryfallQuery": "keyword:persist t:creature"
+                        },
+                        "zoneLocations": [
+                            "B"
+                        ],
+                        "exileCardState": "",
+                        "mustBeCommander": false,
+                        "libraryCardState": "",
+                        "graveyardCardState": "",
+                        "battlefieldCardState": ""
+                    }
+                ],
+                "legalities": {
+                    "brawl": true,
+                    "predh": false,
+                    "legacy": true,
+                    "modern": true,
+                    "pauper": false,
+                    "alchemy": false,
+                    "pioneer": true,
+                    "vintage": true,
+                    "standard": false,
+                    "commander": true,
+                    "premodern": false,
+                    "oathbreaker": true,
+                    "standardBrawl": false,
+                    "pauperCommander": true,
+                    "competitiveBrawl": true,
+                    "pauperCommanderMain": false
+                },
+                "popularity": 0,
+                "bracketTag": "E",
+                "description": "Cast Moritte either from your hand or from the command zone by paying {2}{G}{U}{U} plus commander tax if applicable. Choose to have it enter as a copy of the persist creature that is still legendary.\nPut Moritte into your graveyard due to the legend rule. When it dies, its persist ability triggers, returning it from your graveyard to the battlefield with a +1/+1 counter on it due to its ability. Choose to have it enter as a copy of the persist creature that is still legendary.\nRepeat step 2.",
+                "manaNeeded": "{2}{G}{U}{U} plus commander tax if applicable",
+                "variantCount": 1,
+                "manaValueNeeded": 5,
+                "easyPrerequisites": "",
+                "notablePrerequisites": "The persist creature is your Ring-bearer."
+            }
+        ],
+        "almostIncludedByAddingColors": [
+            {
+                "id": "513-3771",
+                "of": [
+                    {
+                        "id": 26488
+                    }
+                ],
+                "uses": [
+                    {
+                        "card": {
+                            "id": 3771,
+                            "name": "Animar, Soul of Elements",
+                            "faces": 1,
+                            "spoiler": false,
+                            "oracleId": "725880b2-1675-414f-b61b-cf6533797dbf",
+                            "typeLine": "Legendary Creature \u2014 Elemental",
+                            "imageUriBackPng": null,
+                            "imageUriFrontPng": "https://cards.scryfall.io/png/front/a/3/a3da57d0-1ae3-4f05-a52d-eb76ad56cae7.png?1783921859",
+                            "imageUriBackLarge": null,
+                            "imageUriBackSmall": null,
+                            "imageUriBackNormal": null,
+                            "imageUriFrontLarge": "https://cards.scryfall.io/large/front/a/3/a3da57d0-1ae3-4f05-a52d-eb76ad56cae7.jpg?1783921859",
+                            "imageUriFrontSmall": "https://cards.scryfall.io/small/front/a/3/a3da57d0-1ae3-4f05-a52d-eb76ad56cae7.jpg?1783921859",
+                            "layoutRotationFront": null,
+                            "imageUriFrontNormal": "https://cards.scryfall.io/normal/front/a/3/a3da57d0-1ae3-4f05-a52d-eb76ad56cae7.jpg?1783921859",
+                            "imageUriBackArtCrop": null,
+                            "imageUriFrontArtCrop": "https://cards.scryfall.io/art_crop/front/a/3/a3da57d0-1ae3-4f05-a52d-eb76ad56cae7.jpg?1783921859"
+                        },
+                        "quantity": 1,
+                        "usedFace": null,
+                        "zoneLocations": [
+                            "B"
+                        ],
+                        "exileCardState": "",
+                        "mustBeCommander": false,
+                        "libraryCardState": "",
+                        "graveyardCardState": "",
+                        "battlefieldCardState": ""
+                    },
+                    {
+                        "card": {
+                            "id": 513,
+                            "name": "Hullbreaker Horror",
+                            "faces": 1,
+                            "spoiler": false,
+                            "oracleId": "d4a84e78-d9b9-4c67-8a4b-4329e65f0f15",
+                            "typeLine": "Creature \u2014 Kraken Horror",
+                            "imageUriBackPng": null,
+                            "imageUriFrontPng": "https://cards.scryfall.io/png/front/1/3/137acb70-a1fd-4ea9-a5d9-f4b438eb5e82.png?1783908162",
+                            "imageUriBackLarge": null,
+                            "imageUriBackSmall": null,
+                            "imageUriBackNormal": null,
+                            "imageUriFrontLarge": "https://cards.scryfall.io/large/front/1/3/137acb70-a1fd-4ea9-a5d9-f4b438eb5e82.jpg?1783908162",
+                            "imageUriFrontSmall": "https://cards.scryfall.io/small/front/1/3/137acb70-a1fd-4ea9-a5d9-f4b438eb5e82.jpg?1783908162",
+                            "layoutRotationFront": null,
+                            "imageUriFrontNormal": "https://cards.scryfall.io/normal/front/1/3/137acb70-a1fd-4ea9-a5d9-f4b438eb5e82.jpg?1783908162",
+                            "imageUriBackArtCrop": null,
+                            "imageUriFrontArtCrop": "https://cards.scryfall.io/art_crop/front/1/3/137acb70-a1fd-4ea9-a5d9-f4b438eb5e82.jpg?1783908162"
+                        },
+                        "quantity": 1,
+                        "usedFace": null,
+                        "zoneLocations": [
+                            "B"
+                        ],
+                        "exileCardState": "",
+                        "mustBeCommander": false,
+                        "libraryCardState": "",
+                        "graveyardCardState": "",
+                        "battlefieldCardState": ""
+                    }
+                ],
+                "notes": "",
+                "prices": {
+                    "tcgplayer": "34.05",
+                    "cardmarket": "28.13",
+                    "cardkingdom": "36.98"
+                },
+                "status": "OK",
+                "spoiler": false,
+                "identity": "GUR",
+                "includes": [
+                    {
+                        "id": 28712
+                    },
+                    {
+                        "id": 26488
+                    }
+                ],
+                "produces": [
+                    {
+                        "feature": {
+                            "id": 2244,
+                            "name": "Infinite +1/+1 counters on a creature",
+                            "status": "C",
+                            "uncountable": true
+                        },
+                        "quantity": 1
+                    },
+                    {
+                        "feature": {
+                            "id": 4,
+                            "name": "Infinite creature ETB",
+                            "status": "H",
+                            "uncountable": true
+                        },
+                        "quantity": 1
+                    },
+                    {
+                        "feature": {
+                            "id": 3,
+                            "name": "Infinite creature LTB",
+                            "status": "H",
+                            "uncountable": true
+                        },
+                        "quantity": 1
+                    },
+                    {
+                        "feature": {
+                            "id": 17,
+                            "name": "Infinite storm count",
+                            "status": "H",
+                            "uncountable": true
+                        },
+                        "quantity": 1
+                    }
+                ],
+                "requires": [],
+                "legalities": {
+                    "brawl": false,
+                    "predh": false,
+                    "legacy": true,
+                    "modern": false,
+                    "pauper": false,
+                    "alchemy": false,
+                    "pioneer": false,
+                    "vintage": true,
+                    "standard": false,
+                    "commander": true,
+                    "premodern": false,
+                    "oathbreaker": true,
+                    "standardBrawl": false,
+                    "pauperCommander": false,
+                    "competitiveBrawl": false,
+                    "pauperCommanderMain": false
+                },
+                "popularity": 11438,
+                "bracketTag": "O",
+                "description": "Cast any creature card by paying {0} due to Animar.\nAnimar and Hullbreaker Horror triggers.\nResolve the Animar trigger, putting a +1/+1 counter on it.\nResolve the Hullbreaker Horror trigger, returning another creature that can be cast by paying {0} due to Animar from the battlefield to your hand.\nResolve the creature spell cast in step 1.\nRepeat.",
+                "manaNeeded": "",
+                "variantCount": 1,
+                "manaValueNeeded": 0,
+                "easyPrerequisites": "",
+                "notablePrerequisites": "You have a creature card in hand that can be cast by paying {0} due to Animar.\nYou control a nontoken creature that can be cast by paying at most {1} due to Animar."
+            },
+            {
+                "id": "1245-4772",
+                "of": [
+                    {
+                        "id": 2685
+                    }
+                ],
+                "uses": [
+                    {
+                        "card": {
+                            "id": 1245,
+                            "name": "Tooth and Claw",
+                            "faces": 1,
+                            "spoiler": false,
+                            "oracleId": "587368eb-068c-44a3-ba8c-5ad0f59f880f",
+                            "typeLine": "Enchantment",
+                            "imageUriBackPng": null,
+                            "imageUriFrontPng": "https://cards.scryfall.io/png/front/a/8/a8c77d9f-22bd-4676-b594-8499369c449c.png?1783937574",
+                            "imageUriBackLarge": null,
+                            "imageUriBackSmall": null,
+                            "imageUriBackNormal": null,
+                            "imageUriFrontLarge": "https://cards.scryfall.io/large/front/a/8/a8c77d9f-22bd-4676-b594-8499369c449c.jpg?1783937574",
+                            "imageUriFrontSmall": "https://cards.scryfall.io/small/front/a/8/a8c77d9f-22bd-4676-b594-8499369c449c.jpg?1783937574",
+                            "layoutRotationFront": null,
+                            "imageUriFrontNormal": "https://cards.scryfall.io/normal/front/a/8/a8c77d9f-22bd-4676-b594-8499369c449c.jpg?1783937574",
+                            "imageUriBackArtCrop": null,
+                            "imageUriFrontArtCrop": "https://cards.scryfall.io/art_crop/front/a/8/a8c77d9f-22bd-4676-b594-8499369c449c.jpg?1783937574"
+                        },
+                        "quantity": 1,
+                        "usedFace": null,
+                        "zoneLocations": [
+                            "B"
+                        ],
+                        "exileCardState": "",
+                        "mustBeCommander": false,
+                        "libraryCardState": "",
+                        "graveyardCardState": "",
+                        "battlefieldCardState": ""
+                    },
+                    {
+                        "card": {
+                            "id": 4772,
+                            "name": "Doubling Season",
+                            "faces": 1,
+                            "spoiler": false,
+                            "oracleId": "01546b7d-a233-4176-8843-d732074dc5b6",
+                            "typeLine": "Enchantment",
+                            "imageUriBackPng": null,
+                            "imageUriFrontPng": "https://cards.scryfall.io/png/front/f/2/f2c4f80e-84a0-463b-82c3-5c6503809351.png?1783909062",
+                            "imageUriBackLarge": null,
+                            "imageUriBackSmall": null,
+                            "imageUriBackNormal": null,
+                            "imageUriFrontLarge": "https://cards.scryfall.io/large/front/f/2/f2c4f80e-84a0-463b-82c3-5c6503809351.jpg?1783909062",
+                            "imageUriFrontSmall": "https://cards.scryfall.io/small/front/f/2/f2c4f80e-84a0-463b-82c3-5c6503809351.jpg?1783909062",
+                            "layoutRotationFront": null,
+                            "imageUriFrontNormal": "https://cards.scryfall.io/normal/front/f/2/f2c4f80e-84a0-463b-82c3-5c6503809351.jpg?1783909062",
+                            "imageUriBackArtCrop": null,
+                            "imageUriFrontArtCrop": "https://cards.scryfall.io/art_crop/front/f/2/f2c4f80e-84a0-463b-82c3-5c6503809351.jpg?1783909062"
+                        },
+                        "quantity": 1,
+                        "usedFace": null,
+                        "zoneLocations": [
+                            "B"
+                        ],
+                        "exileCardState": "",
+                        "mustBeCommander": false,
+                        "libraryCardState": "",
+                        "graveyardCardState": "",
+                        "battlefieldCardState": ""
+                    }
+                ],
+                "notes": "",
+                "prices": {
+                    "tcgplayer": "30.83",
+                    "cardmarket": "20.01",
+                    "cardkingdom": "40.34"
+                },
+                "status": "OK",
+                "spoiler": false,
+                "identity": "RG",
+                "includes": [
+                    {
+                        "id": 2685
+                    }
+                ],
+                "produces": [
+                    {
+                        "feature": {
+                            "id": 7,
+                            "name": "Infinite death triggers",
+                            "status": "H",
+                            "uncountable": true
+                        },
+                        "quantity": 1
+                    },
+                    {
+                        "feature": {
+                            "id": 4,
+                            "name": "Infinite creature ETB",
+                            "status": "H",
+                            "uncountable": true
+                        },
+                        "quantity": 1
+                    },
+                    {
+                        "feature": {
+                            "id": 3,
+                            "name": "Infinite creature LTB",
+                            "status": "H",
+                            "uncountable": true
+                        },
+                        "quantity": 1
+                    },
+                    {
+                        "feature": {
+                            "id": 6,
+                            "name": "Infinite creature sacrifice triggers",
+                            "status": "H",
+                            "uncountable": true
+                        },
+                        "quantity": 1
+                    }
+                ],
+                "requires": [],
+                "legalities": {
+                    "brawl": false,
+                    "predh": true,
+                    "legacy": true,
+                    "modern": false,
+                    "pauper": false,
+                    "alchemy": false,
+                    "pioneer": false,
+                    "vintage": true,
+                    "standard": false,
+                    "commander": true,
+                    "premodern": false,
+                    "oathbreaker": true,
+                    "standardBrawl": false,
+                    "pauperCommander": false,
+                    "competitiveBrawl": false,
+                    "pauperCommanderMain": false
+                },
+                "popularity": 386,
+                "bracketTag": "E",
+                "description": "Activate Tooth and Claw by sacrificing two creatures, creating two 3/1 Carnivore creature tokens.\nRepeat.",
+                "manaNeeded": "",
+                "variantCount": 15,
+                "manaValueNeeded": 0,
+                "easyPrerequisites": "You control at least two additional creatures",
+                "notablePrerequisites": ""
+            },
+            {
+                "id": "5534--28",
+                "of": [
+                    {
+                        "id": 26607
+                    }
+                ],
+                "uses": [
+                    {
+                        "card": {
+                            "id": 5534,
+                            "name": "Stella Lee, Wild Card",
+                            "faces": 1,
+                            "spoiler": false,
+                            "oracleId": "8d0da2f9-0e05-4a94-8d42-fd57d06b09ba",
+                            "typeLine": "Legendary Creature \u2014 Human Rogue",
+                            "imageUriBackPng": null,
+                            "imageUriFrontPng": "https://cards.scryfall.io/png/front/2/a/2a8a7696-b5d9-4378-9d5c-2c9007e4df63.png?1783911971",
+                            "imageUriBackLarge": null,
+                            "imageUriBackSmall": null,
+                            "imageUriBackNormal": null,
+                            "imageUriFrontLarge": "https://cards.scryfall.io/large/front/2/a/2a8a7696-b5d9-4378-9d5c-2c9007e4df63.jpg?1783911971",
+                            "imageUriFrontSmall": "https://cards.scryfall.io/small/front/2/a/2a8a7696-b5d9-4378-9d5c-2c9007e4df63.jpg?1783911971",
+                            "layoutRotationFront": null,
+                            "imageUriFrontNormal": "https://cards.scryfall.io/normal/front/2/a/2a8a7696-b5d9-4378-9d5c-2c9007e4df63.jpg?1783911971",
+                            "imageUriBackArtCrop": null,
+                            "imageUriFrontArtCrop": "https://cards.scryfall.io/art_crop/front/2/a/2a8a7696-b5d9-4378-9d5c-2c9007e4df63.jpg?1783911971"
+                        },
+                        "quantity": 1,
+                        "usedFace": null,
+                        "zoneLocations": [
+                            "B"
+                        ],
+                        "exileCardState": "",
+                        "mustBeCommander": false,
+                        "libraryCardState": "",
+                        "graveyardCardState": "",
+                        "battlefieldCardState": ""
+                    }
+                ],
+                "notes": "",
+                "prices": {
+                    "tcgplayer": "5.24",
+                    "cardmarket": "4.26",
+                    "cardkingdom": "5.99"
+                },
+                "status": "OK",
+                "spoiler": false,
+                "identity": "UR",
+                "includes": [
+                    {
+                        "id": 26607
+                    }
+                ],
+                "produces": [
+                    {
+                        "feature": {
+                            "id": 1898,
+                            "name": "Infinite copies of one instant or sorcery",
+                            "status": "S",
+                            "uncountable": false
+                        },
+                        "quantity": 1
+                    },
+                    {
+                        "feature": {
+                            "id": 77,
+                            "name": "Infinite magecraft triggers",
+                            "status": "H",
+                            "uncountable": true
+                        },
+                        "quantity": 1
+                    }
+                ],
+                "requires": [
+                    {
+                        "quantity": 1,
+                        "template": {
+                            "id": 28,
+                            "name": "Instant or Sorcery that untaps a Creature",
+                            "scryfallApi": "https://api.scryfall.com/cards/search?q=%28%28t%3Ainstant+or+t%3Asorcery%29+otag%3Auntapper-creature%29+legal%3Acommander",
+                            "scryfallQuery": "(t:instant or t:sorcery) otag:untapper-creature"
+                        },
+                        "zoneLocations": [
+                            "H"
+                        ],
+                        "exileCardState": "",
+                        "mustBeCommander": false,
+                        "libraryCardState": "",
+                        "graveyardCardState": "",
+                        "battlefieldCardState": ""
+                    }
+                ],
+                "legalities": {
+                    "brawl": true,
+                    "predh": false,
+                    "legacy": true,
+                    "modern": false,
+                    "pauper": false,
+                    "alchemy": false,
+                    "pioneer": false,
+                    "vintage": true,
+                    "standard": false,
+                    "commander": true,
+                    "premodern": false,
+                    "oathbreaker": true,
+                    "standardBrawl": false,
+                    "pauperCommander": false,
+                    "competitiveBrawl": true,
+                    "pauperCommanderMain": false
+                },
+                "popularity": 0,
+                "bracketTag": "S",
+                "description": "Cast the instant or sorcery by paying its mana cost.\nHolding priority, activate Stella Lee by tapping it, copying the instant or sorcery.\nResolve the copy of the instant or sorcery, untapping Stella Lee.\nRepeat from step 2.",
+                "manaNeeded": "",
+                "variantCount": 1,
+                "manaValueNeeded": 0,
+                "easyPrerequisites": "",
+                "notablePrerequisites": "You have cast at least two spells this turn.\nStella Lee does not have summoning sickness.\nYou have enough mana to cast the instant or sorcery card.\nYou have additional legal target(s) for the instant or sorcery card, if applicable."
+            }
+        ],
+        "almostIncludedByChangingCommanders": [],
+        "almostIncludedByAddingColorsAndChangingCommanders": []
+    }
+}
