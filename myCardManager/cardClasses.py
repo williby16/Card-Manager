@@ -175,4 +175,11 @@ class Collection:
     """
 
 
-    
+class CommanderDeck:
+    def __init__(self, decklistPath):
+        if (decklistPath == None):
+            self.cards = {} # []
+            self.commander = {}
+        else:
+            self.cards = {}
+            self.commander = {}

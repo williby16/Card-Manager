@@ -2,6 +2,7 @@ import requests
 import json
 
 class Combo: # parse out the json of a combo into a single object! # write this out more later lol
+    # TODO implement me </3
     def __init__(self, comboJson):
         self.usesNames = []
         for i in comboJson["uses"]:
