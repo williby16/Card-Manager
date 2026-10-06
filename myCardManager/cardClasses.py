@@ -15,44 +15,45 @@ _default.default = JSONEncoder().default
 JSONEncoder.default = _default
 
 class Card:
-    def __init__(self, cardData, cardMeta):
+    def __init__(self, cardMeta):
         self.cardMeta = cardMeta
-        self.cardData = cardData
+        #self.cardData = cardData
     
-    def print_name(self):
-        print(self.cardData["set"])
+    #def print_name(self):
+    #    print(self.cardData["set"])
     
     # custom implementation to make it serializable
     def to_json(self):
-        return [self.cardMeta, self.cardData]
+        return self.cardMeta # don't store card data anymore
+        #return [self.cardMeta, self.cardData]
 
 # import the card from a csv
 class csvCard(Card):
     def __init__(self, card):
         thisSearch = f'{card["Edition"]}-{card["Collector Number"]}-'
         self.cardMeta = card
-        self.cardData = search_card(thisSearch)
+        #self.cardData = search_card(thisSearch)
 
 # add a card from scryfall, need to create csv metadata for it 
-class scryCard(Card):
+class scryCard(Card): # cardData will only be used here now, and won't be permanantly stored!
     def __init__(self, cardName, foil=""): # cardname should include additional filters for specfic printing! (Implemented in collection class)
-        self.cardData = query_card(cardName)
-        self.generateMetaData(foil)
+        cardData = query_card(cardName)
+        self.generateMetaData(cardData, foil)
     
-    def generateMetaData(self, foil=""):
+    def generateMetaData(self, cardData, foil=""):
         now = datetime.now()
         # "1","1","NAME","SET_CODE","Near Mint","English","","","TIME","COLLECTOR_NUMBER","False","False",""
         # "Count","Tradelist Count","Name","Edition","Condition","Language","Foil","Tags","Last Modified","Collector Number","Alter","Proxy","Purchase Price"
         self.cardMeta = {"Count": "1",
                          "Tradelist Count": "1",
-                         "Name": self.cardData["name"],
-                         "Edition": self.cardData["set"],
+                         "Name": cardData["name"],
+                         "Edition": cardData["set"],
                          "Condition": "Near Mint",
                          "Language": "English",
                          "Foil": foil,
                          "Tags": "",
                          "Last Modified": str(now),
-                         "Collector Number": self.cardData["collector_number"]
+                         "Collector Number": cardData["collector_number"]
                          }
 
 
@@ -176,10 +177,28 @@ class Collection:
 
 
 class CommanderDeck:
-    def __init__(self, decklistPath):
-        if (decklistPath == None):
-            self.cards = {} # []
-            self.commander = {}
-        else:
-            self.cards = {}
-            self.commander = {}
+    def __init__(self, decklistPath=None): # assume .txt
+        # for now, only accept init or passing path
+        if (decklistPath != None):
+            self.load_from_text(decklistPath)
+
+    
+    def to_text(self):
+        pass
+
+    def to_json(self):
+        pass
+
+    def load_from_text(self, path):
+        # we'll open bulk, but its also an option to pull the cards from collection! # maybe have a seperate function for that.
+        ScryBulkUtils.openBulk()
+        # assume first line is commander
+        with open("filename.txt", "r") as file:
+            file.readLine() # commander
+            for line in file:
+                pass # deck # parse out the set-collector-foil
+
+        ScryBulkUtils.closeBulk()
+
+    def load_from_json(self):
+        pass
