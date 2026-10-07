@@ -4,9 +4,26 @@ import json
 import csv
 from tqdm import tqdm
 import gc
+import re
 
 # needed to make the class serializable
 from json import JSONEncoder
+
+def generateMetaData(cardData, foil="", count=1):
+    now = datetime.now()
+    # "1","1","NAME","SET_CODE","Near Mint","English","","","TIME","COLLECTOR_NUMBER","False","False",""
+    # "Count","Tradelist Count","Name","Edition","Condition","Language","Foil","Tags","Last Modified","Collector Number","Alter","Proxy","Purchase Price"
+    return {"Count": str(count),
+            "Tradelist Count": "1",
+            "Name": cardData["name"],
+            "Edition": cardData["set"],
+            "Condition": "Near Mint",
+            "Language": "English",
+            "Foil": foil,
+            "Tags": "",
+            "Last Modified": str(now),
+            "Collector Number": cardData["collector_number"]
+            }
 
 def _default(self, obj):
     return getattr(obj.__class__, "to_json", _default.default)(obj)
@@ -38,23 +55,7 @@ class csvCard(Card):
 class scryCard(Card): # cardData will only be used here now, and won't be permanantly stored!
     def __init__(self, cardName, foil=""): # cardname should include additional filters for specfic printing! (Implemented in collection class)
         cardData = query_card(cardName)
-        self.generateMetaData(cardData, foil)
-    
-    def generateMetaData(self, cardData, foil=""):
-        now = datetime.now()
-        # "1","1","NAME","SET_CODE","Near Mint","English","","","TIME","COLLECTOR_NUMBER","False","False",""
-        # "Count","Tradelist Count","Name","Edition","Condition","Language","Foil","Tags","Last Modified","Collector Number","Alter","Proxy","Purchase Price"
-        self.cardMeta = {"Count": "1",
-                         "Tradelist Count": "1",
-                         "Name": cardData["name"],
-                         "Edition": cardData["set"],
-                         "Condition": "Near Mint",
-                         "Language": "English",
-                         "Foil": foil,
-                         "Tags": "",
-                         "Last Modified": str(now),
-                         "Collector Number": cardData["collector_number"]
-                         }
+        self.cardMeta = generateMetaData(cardData, foil)
 
 
 class Collection:
@@ -179,6 +180,8 @@ class Collection:
 class CommanderDeck:
     def __init__(self, decklistPath=None): # assume .txt
         # for now, only accept init or passing path
+        self.deckCollection = Collection()
+        self.commander = None
         if (decklistPath != None):
             self.load_from_text(decklistPath)
 
@@ -190,15 +193,30 @@ class CommanderDeck:
         pass
 
     def load_from_text(self, path):
-        # we'll open bulk, but its also an option to pull the cards from collection! # maybe have a seperate function for that.
-        ScryBulkUtils.openBulk()
+        # NOTE EXPECTS THIS FORMAT OF CARDS SEPERATED BY \n:
+        # 1 Riku of Many Paths (OTJ) 361 *F*
         # assume first line is commander
-        with open("filename.txt", "r") as file:
-            file.readLine() # commander
+        with open(path, "r") as file:
             for line in file:
-                pass # deck # parse out the set-collector-foil
+                match = re.search("([0-9]+) (.+?) (\\(.+?\\)) (.+?)( |(?:$))(\\*F\\*)?", line)
+                count = match.group(1)
+                name = match.group(2)
+                setn = match.group(3)[1:-1].lower() # cut out parenthises
+                collector = match.group(4)
+                foil = match.group(5)
+                if not foil:
+                    foil = ""
+                else:
+                    foil = "foil"
 
-        ScryBulkUtils.closeBulk()
+                key = f"{setn}-{collector}-{foil}"
+                print(key)
+                thisData = {"name": name, "set": setn, "collector_number": collector}
+                metaData = generateMetaData(thisData, foil, count)
+                card = Card(metaData)
+                self.deckCollection.add_card(card)
+                if not self.commander:
+                    self.commander = key
 
     def load_from_json(self):
         pass
